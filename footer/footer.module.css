@@ -1,0 +1,12 @@
+.footer{
+    background-color: #7200dd;
+    color: white;
+    text-decoration: none;
+    display: grid;
+    grid-area: footer;
+    padding: 15px 0px 10px;
+    grid-template: 1fr/ 1fr  minmax(auto, 500px) minmax(auto,500px) 1fr ;
+  }
+  .footer_language{
+    text-align: end;
+  }

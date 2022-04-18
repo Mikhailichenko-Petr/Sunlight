@@ -1,0 +1,35 @@
+  .nav_gallery{
+    display: grid;
+    padding: 5px;
+    grid-area: nav; 
+    background-color: #e100ff80;
+  }
+  .nav_gallery_item {
+    position: relative;
+    margin: 0px 0px 10px 0px ;
+    
+  }
+  .nav_gallery_item:hover{
+    cursor: pointer;
+  }
+  .nav_gallery_img{
+    display: block;
+    position: relative;
+    width: 80%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+  }
+  .gallery_item_video{
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+  }
+  .gallery_item_video img{
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      display: block;
+      position: absolute;
+      top: 20%; left: 15%;
+  }

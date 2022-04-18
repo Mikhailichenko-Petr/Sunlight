@@ -1,0 +1,119 @@
+.bio{
+  padding: 5px;
+    grid-area: ads;
+    background-color: rgba(68, 0, 26, 0.74);
+  }
+  .bio_one_line{
+    display: grid;
+    grid-template-columns: repeat(3, 100px 230px 300px);
+  }
+  .bio_two_line{
+    display: grid;
+    grid-template-columns: repeat(3, 100px 100px 300px);
+  }
+  .bio_reviews{
+    display: grid;
+    /* grid-template-columns: 150px 50%; */
+    grid-template-columns: repeat(2, 170px 1fr);
+  }
+  .bio_four_line_box{
+    display: grid;
+    grid-template-columns: repeat(2, 400px 1fr);
+    grid-gap: 10px;
+  
+  }
+  .add_to_basket{
+    background-color: #000000;
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .add_to_basket:hover{
+    background-color: rgba(209, 0, 0, 0.925);
+  }
+  .add_to_favorites{
+    background-color: #000000;
+    color: white;
+    font-size: 70px;
+    padding: 20px;
+    border-radius: 0px 20px  20px 0px;
+    border: none;
+    cursor: pointer;
+  }
+  .add_to_favorites:hover{
+    background-color: rgba(209, 0, 0, 0.925);
+  }
+  .bio_four_line_box_two{
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: #00000000;
+    cursor: pointer;
+  }
+  .bio_four_line_box_two:hover{
+    background-color: #00000017;
+  }
+  .bio_five_line_box{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr 300px);
+  }
+  .bio_six_list{
+    display: table;
+    width: 100%;
+  }
+  .bio_six_list .bio_six_name, .bio_six_data{
+    display: table-cell;
+    width: 1px;
+    white-space: nowrap;
+  }
+  .bio_six_list div{
+    display: table-cell;
+    border-bottom: 1px dotted;
+  }
+  /* //////////////////// */
+
+  .review_stars_wrap{
+    overflow: hidden;
+  }
+  .review_stars {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    
+  }
+  .review_stars input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    
+  }
+  .review_stars input ~ label i{
+    color:#ccc;
+    font-size: 20px;
+  }
+  .review_stars input:checked ~ label i{
+    color: #000000;
+
+  }
+  .review_stars label {
+    float: right;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+
+  }
+  .review_stars label:hover i, .review_stars label:hover ~ label i{
+    color: #fffb00;
+
+  }
