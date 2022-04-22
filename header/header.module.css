@@ -122,7 +122,6 @@
   
   /* делаем бургер */
   .mobile_menu {
-    
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -180,36 +179,48 @@
     /* align-items: center; */
     justify-content: center;
     top: 175px;
-    left: 0;
+    left: 0px;
     right: 0;
     z-index: 999;
     height: 0;
     opacity: 1;
     transition: .5s;
-    overflow: hidden;
-
+    overflow:scroll;
+    box-shadow: 0px 1300px 0px rgba(0, 0, 0, 0.281);
+    background-color: white;
+  }
+  .mobile_menu__container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
   .mobile_menu__list {
     display: grid;
     grid-template-columns: 20% 1fr;
     width: 1459px;
+    height: 1950px;
     transition: .5s;
     list-style: none;
     padding-left: 0;
     /* margin-top: -300px; */
-    background-color: #7c0000;
   }
   .mobile_menu__item {
-    background-color: #ff0000;
-    font-size: 25px;
-    padding-bottom: 15px;
-
+    font-size: 23px;   
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 90%;
+  }
+  .mobile_menu__item:hover{
+    border-radius: 20px;
+    background-color: #f8f8f8;
   }
   .mobile_menu__link {
     text-decoration: none;
+    align-items: center;
     color: rgb(0, 0, 0);
     display: grid;
-    grid-template-columns: 40px 2fr;
+    grid-template-columns: 40px 1fr;
   }
   .mobile_menu_section_one{
     display: grid;
@@ -220,12 +231,48 @@
     border-radius:30px ;
     width: 380px;
   }
+  .mobile_menu_section_material_box{
+    display: flex;
+    padding-left: 20px;
+  }
+  .mobile_menu_section_material_name{
+    display: grid;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 4px #000;
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    bottom: 95px;
+    left: 20px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+  }
+  .mobile_menu_section_material_rock_start img{
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0 2px 16px rgb(0 0 0 / 16%);
+  }
+  .mobile_menu_section_material_rock{
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+  }
+  .mobile_menu_section_material_rock img{
+    box-shadow: 0 2px 16px rgb(0 0 0 / 16%);
+    border-radius: 50%;
+    height: 140px;
+  }
   .mobile_menu_section_four{
     padding-bottom: 30px;
   }
-  .mobile_menu_section_four_title{
+  .mobile_menu_section_title{
     font-size: 20px;
     color: #707070;
+    padding: 20px 0px;
   }
   .mobile_menu_section_four_box{
     display:grid;
@@ -240,6 +287,15 @@
     grid-template-columns: 70px 1fr;
     justify-content: center;
     align-items: center;
+  }
+  .mobile_menu_section_four_rock p{
+    display:flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+  .mobile_menu_section_four_rock:hover{  
+    text-decoration:underline;  
   }
   .mobile_menu_section_four_rock a{
     text-decoration: none;

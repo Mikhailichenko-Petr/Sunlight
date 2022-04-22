@@ -63,10 +63,114 @@ export const Header = () => {
                                 <a href=""><img src="https://g0.sunlight.net/media/content/desktop-menu/block-items/d31926284df1fa6ed49fe34e623c6e18b06f50f1.jpg" alt="" /></a>
                                 <a href=""><img src="https://g8.sunlight.net/media/content/desktop-menu/block-items/14a4a815a2af9e44ffa54c79a813ba8cc4260038.jpg" alt="" /></a>
                               </section>
-                              <section className={style.mobile_menu_section_one}><a href=""></a></section>
-                              <section className={style.mobile_menu_section_one}><a href=""></a></section>
+                              <section className={style.mobile_menu_section_fore}>
+                              <div className={style.mobile_menu_section_title}><p>Типы украшений</p></div>
+                                <div className={style.mobile_menu_section_four_box}>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g1.sunlight.net/media/content/desktop-menu/block-items/83592dcf0072a635ca49ea5916af90844997fdd2.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Кольца</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g9.sunlight.net/media/content/desktop-menu/block-items/73e531be199b6bf20b5e40bf467ff63f3f2c8015.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Часы</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g3.sunlight.net/media/content/desktop-menu/block-items/7dc1863b19b098c3098bb107084cfd82d1567cdb.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Пирсинг</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g6.sunlight.net/media/content/desktop-menu/block-items/0941f5fca6029401fe11600f0990a6fdeccbb910.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Для волос</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g0.sunlight.net/media/content/desktop-menu/block-items/9e7c7389795ee445c4d7835843cb4a2f539b27bc.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Серьги</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g1.sunlight.net/media/content/desktop-menu/block-items/0f4811cb792bf6fafe28efbb7a3a87dae4f66abe.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Цепи</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g9.sunlight.net/media/content/desktop-menu/block-items/edd453f845ff0f4d3b6a33ea54f47f708d3d9c0c.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Обереги</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g1.sunlight.net/media/content/desktop-menu/block-items/8332308d7cc5cf922aacacae555604bbeaf2068d.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Запонки</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g5.sunlight.net/media/content/desktop-menu/block-items/b2d0469a746f026d66d1e7cf39d63386015a1cc0.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Браслеты</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g1.sunlight.net/media/content/desktop-menu/block-items/63db7d5bad709e1686d21fe2cd61d220a5af8401.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Колье</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g5.sunlight.net/media/content/desktop-menu/block-items/f509de9dfe586c7a707576f777c6673907311229.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Кресты</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g6.sunlight.net/media/content/desktop-menu/block-items/bf6568d768160ea38914ff68ed9356b752f45665.jpg" alt="" /></a> </div>
+                                        <div><a href="#"><p>Акссесуары</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g2.sunlight.net/media/content/desktop-menu/block-items/d916884a3cffaf5d07b21f727a0534540cd1164d.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Подвески</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g0.sunlight.net/media/content/desktop-menu/block-items/faabd74618eca529ef684a4cdb8bf0850a3b412b.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Броши</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g0.sunlight.net/media/content/desktop-menu/block-items/ddb5896bc93138e9dcf1edb805af69b220eba62e.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Шармы</p></a> </div>
+                                    </div>
+                                    <div className={style.mobile_menu_section_four_rock}>
+                                        <div><a href="#"><img src="https://g8.sunlight.net/media/content/desktop-menu/block-items/cd9bbc4e4200af50686a168a7ff49dcf3c6e7265.png" alt="" /></a> </div>
+                                        <div><a href="#"><p>Бижутерия</p></a> </div>
+                                    </div>
+                                </div>
+                              </section>
+                              <section className={style.mobile_menu_section_material}>
+                                  <div className={style.mobile_menu_section_title}><p>Материал</p></div>
+                                  <div className={style.mobile_menu_section_material_box}>
+                                        <div className={style.mobile_menu_section_material_rock_start}>
+                                            <div><a href="#"><img src="https://g9.sunlight.net/media/content/desktop-menu/block-items/049cfb46889c1e17062c63dc185b731e7a5141c8.png" alt="" /></a> </div>
+                                            <a className={style.mobile_menu_section_material_name} href="#"><p>Желтое золото</p></a>
+                                        </div>
+                                        <div className={style.mobile_menu_section_material_rock}>
+                                            <div><a href="#"><img src="https://g6.sunlight.net/media/content/desktop-menu/block-items/005c8a31a6201548ad52ac0e02bfe0a1c6703c8e.png" alt="" /></a> </div>
+                                            <a className={style.mobile_menu_section_material_name} href="#"><p>Розовое золото</p></a>
+                                        </div>
+                                        <div className={style.mobile_menu_section_material_rock}>
+                                            <div><a href="#"><img src="https://g2.sunlight.net/media/content/desktop-menu/block-items/3db260171b9e9287b7e8437d41fe2a49ec9eef25.png" alt="" /></a> </div>
+                                            <a className={style.mobile_menu_section_material_name} href="#"><p>Белое золото</p></a>
+                                        </div>
+                                        <div className={style.mobile_menu_section_material_rock}>
+                                            <div><a href="#"><img src="https://g4.sunlight.net/media/content/desktop-menu/block-items/8cdfa03ff063a32a6f6a23f53376c51f72620ef9.png" alt="" /></a> </div>
+                                            <a className={style.mobile_menu_section_material_name} href="#"><p>Серебро</p></a>
+                                        </div>
+                                        <div className={style.mobile_menu_section_material_rock}>
+                                            <div><a href="#"><img src="https://g5.sunlight.net/media/content/desktop-menu/block-items/f165f2970516a182a789163b031e9009f4d8969b.png" alt="" /></a> </div>
+                                            <a className={style.mobile_menu_section_material_name} href="#"><p>Ювелирная сталь</p></a>
+                                        </div>
+                                        <div className={style.mobile_menu_section_material_rock}>
+                                            <div><a href="#"><img src="https://g9.sunlight.net/media/content/desktop-menu/block-items/14aaea909b1d170852aa861987f7aa329fd3ec96.png" alt="" /></a> </div>
+                                            <a className={style.mobile_menu_section_material_name} href="#"><p>Медь</p></a>
+                                        </div>
+                                        <div className={style.mobile_menu_section_material_rock}>
+                                            <div><a href="#"><img src="https://g7.sunlight.net/media/content/desktop-menu/block-items/cbb12e20c9fb9eab1725eaf912cca3d0715c0f76.png" alt="" /></a> </div>
+                                            <a className={style.mobile_menu_section_material_name} href="#"><p>Керамика</p></a>
+                                        </div>
+                                        <div className={style.mobile_menu_section_material_rock}>
+                                            <div><a href="#"><img src="https://g7.sunlight.net/media/content/desktop-menu/block-items/2bc4306a13f48cf29137956ce4cab7193c26988d.png" alt="" /></a> </div>
+                                            <a className={style.mobile_menu_section_material_name} href="#"><p>Платина</p></a>
+                                        </div>
+                                  </div>
+                              </section>
                               <section className={style.mobile_menu_section_four}>
-                                <div className={style.mobile_menu_section_four_title}><p>Вставка</p></div>
+                                <div className={style.mobile_menu_section_title}><p>Вставка</p></div>
                                 <div className={style.mobile_menu_section_four_box}>
                                     <div className={style.mobile_menu_section_four_rock}>
                                         <div><a href="#"><img src="https://g0.sunlight.net/media/content/desktop-menu/block-items/e53cd655944305faac5b0725c8014732b3e97fce.png" alt="" /></a> </div>
@@ -86,11 +190,11 @@ export const Header = () => {
                                     </div>
                                     <div className={style.mobile_menu_section_four_rock}>
                                         <div><a href="#"><img src="https://g4.sunlight.net/media/content/desktop-menu/block-items/2f6dc52ffccbdab645d026b59af241f1ddb7ed10.png" alt="" /></a> </div>
-                                        <div><a href="#"><p></p>Топаз</a> </div>
+                                        <div><a href="#"><p>Топаз</p></a> </div>
                                     </div>
                                     <div className={style.mobile_menu_section_four_rock}>
                                         <div><a href="#"><img src="https://g4.sunlight.net/media/content/desktop-menu/block-items/874b8c3784f250ceb56d1032c2497df3869ca609.png" alt="" /></a> </div>
-                                        <div><a href="#"><p></p>Рубин</a> </div>
+                                        <div><a href="#"><p>Рубин</p></a> </div>
                                     </div>
                                     <div className={style.mobile_menu_section_four_rock}>
                                         <div><a href="#"><img src="https://g5.sunlight.net/media/content/desktop-menu/block-items/049a5027ee428ccbff2fe049eac1abd138dcb4bd.png" alt="" /></a> </div>
