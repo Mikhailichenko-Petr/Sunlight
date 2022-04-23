@@ -1,9 +1,17 @@
-.main{
-    grid-area: article; 
-    /* padding: 30px; */
+  .box{
     display: grid;
+    /* grid-template-columns: 15% 1fr 70%; */
+    grid-area: article; 
+    grid-template-columns: 8% 800px 562px;
+    grid-template-areas: 
+
+    "nav main ads";
+    padding:0px 60px;
+  }
+
+  .main{
     grid-template: 1fr / 1fr  minmax(auto, 300px) minmax(auto, 1100px) 1fr;
-    background-color: rgba(0, 115, 182, 0.699);
+    grid-area: main; 
   }
   
   
@@ -11,7 +19,10 @@
     grid-column: 3/4;
   }
   
-  
+  .gallery_item img{
+    width: 790px;
+
+  }
   .products_items{
     display: grid;
     column-gap: 30px;

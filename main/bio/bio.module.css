@@ -1,7 +1,7 @@
-.bio{
-  padding: 5px;
+  .bio{
+    padding: 5px;
     grid-area: ads;
-    background-color: rgba(68, 0, 26, 0.74);
+
   }
   .bio_one_line{
     display: grid;
@@ -117,3 +117,8 @@
     color: #fffb00;
 
   }
+
+
+
+
+  /* //////////// */

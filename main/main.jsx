@@ -1,14 +1,21 @@
+import { Exchange_and_return } from "../Exchange_and_return/Exchange_and_return"
+import { Bio } from "./bio/bio"
 import style from "./main.module.css"
+import { Nav } from "./nav_gallery/nav_gallery"
+import { BrowserRouter, Route } from "react-router-dom";
 
 export const Main = () => {
     return(
-        <main className={style.main}>
+        <div className={style.box}>
+            <Nav />
+            <Bio />
+            <main className={style.main}>
             <section className={style.content}>
                 <div className={style.content_info}>
                     <section className={style.content_gallery}>
                         <div className={style.gallery_items}>
                             <div className={style.gallery_item}>
-                                <img src="https://g6.sunlight.net/media/products/26d21403-776b-11ec-82dc-005056b30bd2.jpg" width="800px"/>
+                                <img src="https://g6.sunlight.net/media/products/26d21403-776b-11ec-82dc-005056b30bd2.jpg"/>
                             </div>
                         </div>
                     </section>
@@ -68,6 +75,7 @@ export const Main = () => {
                     </div> 
                 </section>
             </section>
-        </main>
+            </main>
+        </div>
     )
 }

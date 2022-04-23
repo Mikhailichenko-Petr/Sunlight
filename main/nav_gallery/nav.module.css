@@ -2,12 +2,11 @@
     display: grid;
     padding: 5px;
     grid-area: nav; 
-    background-color: #e100ff80;
   }
   .nav_gallery_item {
     position: relative;
     margin: 0px 0px 10px 0px ;
-    
+  
   }
   .nav_gallery_item:hover{
     cursor: pointer;
@@ -19,6 +18,7 @@
     top: 0;
     left: 0;
     border-radius: 20px;
+
   }
   .gallery_item_video{
     width: 100%;

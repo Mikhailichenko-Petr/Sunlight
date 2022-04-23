@@ -7,20 +7,20 @@ export const Header = () => {
             <a href="" className={style.header_logo}>
                +7 966 760 98 22
             </a>
-            <ul className={style.header_list}>
-                <li className={style.header_list}>Обмен и возврат</li>
-                <li className={style.header_list}>Статус заказа</li>
-                <li className={style.header_list}>Магазины</li>
-                <li className={style.header_list}>Доставка</li>
-                <li className={style.header_list}>Ломбард</li>
+            <div className={style.header_list}>
+                <a href="/Exchange_and_return" className={style.header_list}>Обмен и возврат</a>
+                <a href="/Order_status" className={style.header_list}>Статус заказа</a>
+                <a href="/Shops" className={style.header_list}>Магазины</a>
+                <a href="/Delivery" className={style.header_list}>Доставка</a>
+                <a href="/Pawnshop" className={style.header_list}>Ломбард</a>
                 <div className={style.header_burger}>
                     <span></span>
                 </div>
-            </ul>
+            </div>
         </div>
         <div className={style.header_block2}>
              <a href="" className={style.header_logo2}>
-                <img src="https://cataloged.ru/shops/logo/sanlajt.png" alt="logo" height="60px"/>
+                <img src="https://cataloged.ru/shops/logo/sanlajt.png" alt="logo" height="50px"/>
             </a>
             <div className={style.hamburger}>
                 <nav className={style.mobile_menu}>
