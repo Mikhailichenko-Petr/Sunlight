@@ -1,9 +1,9 @@
-import { Exchange_and_return } from "../Exchange_and_return/Exchange_and_return"
+
 import { Bio } from "./bio/bio"
 import style from "./main.module.css"
 import { Nav } from "./nav_gallery/nav_gallery"
 import { BrowserRouter, Route } from "react-router-dom";
-
+import React from "react"
 export const Main = () => {
     return(
         <div className={style.box}>

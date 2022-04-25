@@ -1,5 +1,5 @@
 import style from "./bio.module.css"
-
+import React from "react"
 export const Bio = () => {
     return(
         <div className={style.bio}>

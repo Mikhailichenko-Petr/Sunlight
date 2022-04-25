@@ -1,5 +1,6 @@
 import style from "./header.module.css"
-
+import React from "react"
+import {NavLink } from "react-router-dom"
 export const Header = () => {
     return(
         <header className={style.header} >
@@ -7,21 +8,21 @@ export const Header = () => {
             <a href="" className={style.header_logo}>
                +7 966 760 98 22
             </a>
-            <div className={style.header_list}>
-                <a href="/Exchange_and_return" className={style.header_list}>Обмен и возврат</a>
-                <a href="/Order_status" className={style.header_list}>Статус заказа</a>
-                <a href="/Shops" className={style.header_list}>Магазины</a>
-                <a href="/Delivery" className={style.header_list}>Доставка</a>
-                <a href="/Pawnshop" className={style.header_list}>Ломбард</a>
+            <nav className={style.header_list}>
+                <NavLink to="/Exchange" activeClassName={style.header_list}>Обмен и возврат</NavLink>
+                <NavLink to="/Order_status" activeClassName={style.header_list}>Статус заказа</NavLink>
+                <NavLink to="/Shops" activeClassName={style.header_list}>Магазины</NavLink>
+                <NavLink to="/Delivery" activeClassName={style.header_list}>Доставка</NavLink>
+                <NavLink to="/Pawnshop" activeClassName={style.header_list}>Ломбард</NavLink>
                 <div className={style.header_burger}>
                     <span></span>
                 </div>
-            </div>
+            </nav>
         </div>
         <div className={style.header_block2}>
-             <a href="" className={style.header_logo2}>
+            <NavLink to="/" activeClassName={style.header_logo2}>
                 <img src="https://cataloged.ru/shops/logo/sanlajt.png" alt="logo" height="50px"/>
-            </a>
+            </NavLink>
             <div className={style.hamburger}>
                 <nav className={style.mobile_menu}>
                     <input type="checkbox" id="checkbox" className={style.mobile_menu__checkbox} />

@@ -1,5 +1,5 @@
 import style from "./nav.module.css"
-
+import React from "react"
 export const Nav = () => {
     return(
         <nav className={style.nav_gallery}>
