@@ -12,12 +12,13 @@ import { Pawnshop } from "./header/Pawnshop/Pawnshop";
 
 
 
-function App() {
+function App(props) {
+  console.log(props);
   return (
       <div className={style.container}>
           <Header />
           <Routes>
-            <Route path='/' element={<Main />}/>
+            <Route path='/' element={<Main store={props.store} />}/>
             <Route path='/Exchange' element={<Exchange/>}/>
             <Route path='/Order_status' element={<Order_status/>}/>
             <Route path='/Shops' element={<Shops/>}/>
@@ -27,6 +28,7 @@ function App() {
           <Footer />
       </div>
   );
+  
 }
 
 export default App;

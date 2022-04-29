@@ -4,10 +4,10 @@ import style from "./main.module.css"
 import { Nav } from "./nav_gallery/nav_gallery"
 import { BrowserRouter, Route } from "react-router-dom";
 import React from "react"
-export const Main = () => {
+export const Main = (props) => {
     return(
         <div className={style.box}>
-            <Nav />
+            <Nav store={props.store} />
             <Bio />
             <main className={style.main}>
             <section className={style.content}>
