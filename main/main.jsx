@@ -1,10 +1,12 @@
-
 import { Bio } from "./bio/bio"
 import style from "./main.module.css"
-import { Nav } from "./nav_gallery/nav_gallery"
-import { BrowserRouter, Route } from "react-router-dom";
+import  Nav  from "./nav_gallery/nav_gallery"
 import React from "react"
+import { useSelector } from "react-redux"
 export const Main = (props) => {
+    const Image=useSelector(state=> state.NavReducer.Image)
+    const Video=useSelector(state=> state.NavReducer.video)
+    console.log(Image,'Main');
     return(
         <div className={style.box}>
             <Nav store={props.store} />
@@ -15,7 +17,10 @@ export const Main = (props) => {
                     <section className={style.content_gallery}>
                         <div className={style.gallery_items}>
                             <div className={style.gallery_item}>
-                                <img src="https://g6.sunlight.net/media/products/26d21403-776b-11ec-82dc-005056b30bd2.jpg"/>
+                                {Image ? <img src={Image} /> 
+                                : <video playsinline="" autoplay="" loop="" muted="">
+                                       <source src={Video} type="video/mp4" />
+                                  </video>}
                             </div>
                         </div>
                     </section>

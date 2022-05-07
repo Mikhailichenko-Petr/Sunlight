@@ -1,3 +1,4 @@
+
 import {Route,Routes} from "react-router-dom";
 import style from "./app.module.css"
 import React from "react"
@@ -12,17 +13,19 @@ import { Pawnshop } from "./header/Pawnshop/Pawnshop";
 
 
 
-function App(props) {
-  console.log(props);
+
+
+function App() {
+  
   return (
       <div className={style.container}>
           <Header />
           <Routes>
-            <Route path='/' element={<Main store={props.store} />}/>
+            <Route path='/' element={<Main />}/>
             <Route path='/Exchange' element={<Exchange/>}/>
             <Route path='/Order_status' element={<Order_status/>}/>
             <Route path='/Shops' element={<Shops/>}/>
-            <Route path='/Delivery' element={<Delivery/>}/>
+            <Route path='/Delivery' element={<Delivery />}/>
             <Route path='/Pawnshop' element={<Pawnshop/>}/>
           </Routes>
           <Footer />
