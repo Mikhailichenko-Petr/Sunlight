@@ -1,0 +1,19 @@
+.basket{
+    display: grid;
+    grid-template-columns: 70% 1fr;
+}
+.product_data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
+}
+.product_data img{
+    width: 100px;
+}
+.total{
+    border: 1px solid black;
+}
+.total_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

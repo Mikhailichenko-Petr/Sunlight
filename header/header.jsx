@@ -2,7 +2,10 @@ import style from "./header.module.css"
 import React, { useState } from "react"
 import {NavLink } from "react-router-dom"
 import { Modal } from "./modal/modals/modal";
+import { useSelector } from "react-redux";
 export const Header = () => {
+    const Basket=useSelector(res=>res.BasketReducer.Basket.length)
+
     return(
         <header className={style.header} >
         <div className={style.header_block1}>
@@ -41,18 +44,21 @@ export const Header = () => {
                   <input className={style.input_btn} type="submit" value="Найти"></input>
               </form>
             <nav className={style.sidebar_menu}>
-                    <div className={style.sidebar_box_icon}>
+                    <a className={style.sidebar_box_icon}>
                         <img src="https://cdn.icon-icons.com/icons2/3106/PNG/512/person_avatar_account_user_icon_191606.png" alt="icon" height="40px"/>
-                        <a href="" className={style.sidebar_link}>Войти</a>
-                    </div >
-                    <div className={style.sidebar_box_icon}>
-                        <img src="https://img.icons8.com/material-outlined/384/shopping-cart--v2.png" alt="icon" height="40px"/>
-                        <a href="" className={style.sidebar_link}>Корзина</a>
-                    </div>
-                    <div className={style.sidebar_box_icon}>
+                        <p href="" className={style.sidebar_link}>Войти</p>
+                    </a >
+                    <NavLink to="/Basket" className={style.NavLink}>
+                        <div className={style.sidebar_box_icon}>
+                            <img src="https://img.icons8.com/material-outlined/384/shopping-cart--v2.png" alt="icon" height="40px"/>
+                            <p href="" className={style.sidebar_link}>Корзина</p>
+                        </div>
+                        <span className={style.basket_number}>{Basket}</span>
+                    </NavLink>
+                    <a className={style.sidebar_box_icon}>
                         <img src="https://svgsilh.com/svg_v2/24037.svg" alt="icon" height="40px"/>
-                        <a href="" className={style.sidebar_link}>Избранное</a>
-                    </div>
+                        <p href="" className={style.sidebar_link}>Избранное</p>
+                    </a>
             </nav>
         </div>
         </header>

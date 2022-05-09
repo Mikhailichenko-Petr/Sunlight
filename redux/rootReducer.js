@@ -4,11 +4,13 @@ import { TitleReducer } from "./TitleReducer";
 import { CommentsReducer } from "./commentsReducer"
 import { LoaderReducer } from "./loaderReducer"
 import { NavReducer } from "./navReducer"
+import { BasketReducer } from "./basketReducer"
 
 export const rootReducer= combineReducers({
     likesReducer,
     TitleReducer,
     CommentsReducer,
     LoaderReducer,
-    NavReducer
+    NavReducer,
+    BasketReducer
 })

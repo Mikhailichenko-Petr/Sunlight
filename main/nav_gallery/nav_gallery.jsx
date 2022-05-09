@@ -3,7 +3,6 @@ import React from "react"
 import { connect } from "react-redux"
 import { Nav2AC, Nav1AC, Nav3AC, NavVideo } from "../../redux/action"
 const Nav = (props) => {
-    console.log(props);
     return(
         <nav className={style.nav_gallery}>
             <div className={style.nav_gallery_box}>

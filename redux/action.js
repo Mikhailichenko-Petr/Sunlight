@@ -3,7 +3,7 @@ import { DISLIKE, LIKE,
         COMMENTS_UPDATE,
         COMMENTS_DELITE,
         COMMENTS_LOAD,
-        LOADER, LOADER_END, NAV_IMG2, NAV_IMG1, NAV_IMG3, NAV_VIDEO } from "./types";
+        LOADER, LOADER_END, NAV_IMG2, NAV_IMG1, NAV_IMG3, NAV_VIDEO, BASKET_ADD, BASKET_DELITE } from "./types";
 
 
 export function LikesAC(){
@@ -92,5 +92,19 @@ export function Nav3AC(data) {
     return {
       type: NAV_IMG3,
       data
+    }
+}
+
+////////////// basket
+export function BasketaAddAC(data) {
+    return {
+      type: BASKET_ADD,
+      data
+    }
+}
+export function BasketDeliteAC(id) {
+    return {
+      type: BASKET_DELITE,
+      id
     }
 }

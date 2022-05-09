@@ -6,7 +6,6 @@ const initialState = {
 }
 
 export const NavReducer = (state = initialState, action) => {
-    console.log('nav',action);
     switch (action.type) {
         case NAV_VIDEO:
             return {

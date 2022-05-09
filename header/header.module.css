@@ -104,7 +104,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
+    
+  }
+  .sidebar_box_icon:hover{
+    text-decoration: underline;
   }
   .sidebar_link{
     color: black;
@@ -112,6 +116,22 @@
     
     text-decoration: none;
     /* padding-right: 20px; */
+  }
+  .basket_number{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+    padding: 3px 5px;
+
+    width: 1fr;
+    margin-top: -62px;
+    margin-left: 62px;
+  }
+  .NavLink{
+    text-decoration: none;
   }
   
 
