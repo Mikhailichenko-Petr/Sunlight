@@ -14,13 +14,13 @@ export const Main = (props) => {
     const id =uniqid()
     
     const add_38141=()=>{
-        dispath(BasketaAddAC({id:id, name:'Золотой браслет. Артикул: 38141', price:36740, discount:73480,img:'https://g1.sunlight.net/media/products/100d7b484989d7e826d41faa3e3d10972ee2b90a.jpg'}))
+        dispath(BasketaAddAC({id:id, name:'Золотой браслет. Артикул: 38141', price:36740, discount:73480, img:'https://g1.sunlight.net/media/products/100d7b484989d7e826d41faa3e3d10972ee2b90a.jpg'}))
     }  
     const add_235978=()=>{
         dispath(BasketaAddAC({id:id, name:'Золотые серьги. Артикул: 235978', price:17997,discount:59990, img:'https://g9.sunlight.net/media/products/19464f4715ff1acb701efc6716f214e043065062.jpg'}))
     }
     const add_151996=()=>{
-        dispath(BasketaAddAC({id:id, name:'Золотой браслет. Артикул: 151996', price:223100,discount:196990, img:'https://g2.sunlight.net/media/products/01010ab69387693aaab7a97989beb8e4c10e5585.jpg'}))
+        dispath(BasketaAddAC({id:id, name:'Золотой браслет. Артикул: 151996', price:59070,discount:196990, img:'https://g2.sunlight.net/media/products/01010ab69387693aaab7a97989beb8e4c10e5585.jpg'}))
     }
     const add_108789=()=>{
         dispath(BasketaAddAC({id:id, name:'Золотое кольцо с фианитами. Артикул: 108789',price:13497, discount:44990, img:'https://g7.sunlight.net/media/products/993120b1b2794b1124ec7a4971a27ab94633e286.jpg'}))
@@ -35,7 +35,6 @@ export const Main = (props) => {
         dispath(BasketaAddAC({id:id, name:'Золотые серьги с топазами и бриллиантами. Артикул: 285237', price:16990,discount:56633, img:'https://g3.sunlight.net/media/products/a6e08cc34a6bdde32ded109f8b219f7d814d154f.jpg'}))
     }
    
- 
     return(
         <div className={style.box}>
             <Nav store={props.store} />
@@ -63,7 +62,7 @@ export const Main = (props) => {
                                 <img src="https://g2.sunlight.net/media/products/01010ab69387693aaab7a97989beb8e4c10e5585.jpg" alt=""/>
                             </a>
                             <a href="https://sunlight.net/catalog/bracelets_151996.html" className={style.products_name}>Золотой браслет. Артикул: 151996</a>
-                            <p>223 100₽</p>
+                            <p>59 070₽</p>
                             <button href="https://sunlight.net/catalog/bracelets_151996.html" className={style.products_buy} onClick={add_151996} >Добавить в корзину</button>
                         </div>
                         <div className={style.products_item}>
@@ -71,7 +70,7 @@ export const Main = (props) => {
                                 <img src="https://g1.sunlight.net/media/products/100d7b484989d7e826d41faa3e3d10972ee2b90a.jpg" alt=""/>
                             </a>
                             <a href="https://sunlight.net/catalog/bracelets_38141.html" className={style.products_name}>Золотой браслет. Артикул: 38141</a>
-                            <p>76 320₽</p>
+                            <p>36 740₽</p>
                             <button className={style.products_buy} onClick={add_38141}>Добавить в корзину</button>
                         </div>
                         <div className={style.products_item}>
