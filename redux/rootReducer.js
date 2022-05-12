@@ -5,12 +5,13 @@ import { CommentsReducer } from "./commentsReducer"
 import { LoaderReducer } from "./loaderReducer"
 import { NavReducer } from "./navReducer"
 import { BasketReducer } from "./basketReducer"
-
+import { DeliveryReducer } from "./deliveryReducer";
 export const rootReducer= combineReducers({
     likesReducer,
     TitleReducer,
     CommentsReducer,
     LoaderReducer,
     NavReducer,
-    BasketReducer
+    BasketReducer,
+    DeliveryReducer
 })

@@ -9,16 +9,13 @@ import uniqid from "uniqid"
 export const Main = (props) => {
     const Image=useSelector(state=> state.NavReducer.Image)
     const Video=useSelector(state=> state.NavReducer.video)
-    const bask=useSelector(state=> state.BasketReducer.Basket)
     const dispath=useDispatch()
     const id =uniqid()
     
     const add_38141=()=>{
         dispath(BasketaAddAC({id:id, name:'Золотой браслет. Артикул: 38141', price:36740, discount:73480, img:'https://g1.sunlight.net/media/products/100d7b484989d7e826d41faa3e3d10972ee2b90a.jpg'}))
     }  
-    const add_235978=()=>{
-        dispath(BasketaAddAC({id:id, name:'Золотые серьги. Артикул: 235978', price:17997,discount:59990, img:'https://g9.sunlight.net/media/products/19464f4715ff1acb701efc6716f214e043065062.jpg'}))
-    }
+
     const add_151996=()=>{
         dispath(BasketaAddAC({id:id, name:'Золотой браслет. Артикул: 151996', price:59070,discount:196990, img:'https://g2.sunlight.net/media/products/01010ab69387693aaab7a97989beb8e4c10e5585.jpg'}))
     }

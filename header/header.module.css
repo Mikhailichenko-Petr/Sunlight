@@ -34,6 +34,10 @@
     justify-items: end;
     text-decoration: none;
     color: #000;
+    cursor: pointer;
+  }
+  .header_list:hover{
+    text-decoration: underline;
   }
   
   
@@ -361,3 +365,5 @@
     -webkit-transform: rotate(45deg);
   }
   /* конец бургура */
+
+  

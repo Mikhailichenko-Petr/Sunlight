@@ -32,3 +32,7 @@ export const NAV_VIDEO="NAV_VIDEO"
 
 export const BASKET_ADD="BASKET_ADD"
 export const BASKET_DELITE="BASKET_DELITE"
+
+// types: 'Delivery'
+
+export const DELIVERY_ADD="DELIVERY_ADD"
