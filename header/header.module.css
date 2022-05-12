@@ -111,6 +111,9 @@
     cursor: pointer;
     
   }
+  .sidebar_box_icon svg{
+    width: 40px;
+  }
   .sidebar_box_icon:hover{
     text-decoration: underline;
   }
@@ -131,7 +134,7 @@
     padding: 3px 5px;
 
     width: 1fr;
-    margin-top: -62px;
+    margin-top: -70px;
     margin-left: 62px;
   }
   .NavLink{

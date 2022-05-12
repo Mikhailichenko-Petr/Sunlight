@@ -11,6 +11,7 @@ import { Shops } from "./header/Shops/Shops";
 import { Delivery } from "./header/Delivery/Delivery";
 import { Pawnshop } from "./header/Pawnshop/Pawnshop";
 import { Basket } from "./header/Basket/basket";
+import { Authorization } from "./header/authorization/authorization";
 
 
 
@@ -29,6 +30,7 @@ function App() {
             <Route path='/Delivery' element={<Delivery />}/>
             <Route path='/Pawnshop' element={<Pawnshop/>}/>
             <Route path='/Basket' element={<Basket/>}/>
+            <Route path='/Authorizations' element={<Authorization/>}/>
           </Routes>
           <Footer />
       </div>

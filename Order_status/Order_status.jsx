@@ -1,11 +1,7 @@
 import React, { useState } from "react"
+import { Disable } from "./disable"
 import style from "./Order_status.module.css"
-export const Order_status =({ isVisible = false, title, content, onClose })=>{
-    const[disable,setDisable]=useState({ value: '' })
-
-    const onChange=(e)=>{
-        setDisable({ value: e.target.value } );
-    }
+export const Order_status =({ isVisible = false, onClose })=>{
 
     const keydownHandler = ({ key }) => {
         switch (key) {
@@ -33,8 +29,7 @@ export const Order_status =({ isVisible = false, title, content, onClose })=>{
             <div className={style.modal_body}>
               <div className={style.modal_content}>
                   <h3>Номер заказа из смс</h3>
-                  <input onChange={onChange} placeholder="Номер заказа из смс"/>
-                  <button disabled={disable.value}>Продолжить</button>
+                  <Disable />
               </div>
             </div>
           </div>

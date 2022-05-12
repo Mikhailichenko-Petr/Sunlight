@@ -46,19 +46,21 @@ export const Header = () => {
                   <input className={style.input_btn} type="submit" value="Найти"></input>
               </form>
             <nav className={style.sidebar_menu}>
-                    <a className={style.sidebar_box_icon}>
-                        <img src="https://cdn.icon-icons.com/icons2/3106/PNG/512/person_avatar_account_user_icon_191606.png" alt="icon" height="40px"/>
-                        <p href="" className={style.sidebar_link}>Войти</p>
-                    </a >
+                    <NavLink to="/Authorizations" className={style.NavLink}>
+                            <div className={style.sidebar_box_icon}>
+                                <svg viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect fill="white"></rect><path d="M30 0H0V36H30V0Z" fill="white"></path><path d="M19.5 13.5C19.5 15.9853 17.4853 18 15 18C12.5147 18 10.5 15.9853 10.5 13.5C10.5 11.0147 12.5147 9 15 9C17.4853 9 19.5 11.0147 19.5 13.5Z" stroke="black" stroke-width="1.5"></path><path d="M23.0161 23.6689L23.0171 23.6697C23.6481 24.1436 24.1108 25.1389 24.3725 26.4131C24.5707 27.3777 24.6327 28.4001 24.6075 29.25H5.39252C5.36733 28.4001 5.42937 27.3777 5.6275 26.4131C5.88921 25.1389 6.3519 24.1436 6.98294 23.6697L6.98395 23.6689C7.85816 23.01 8.96743 22.648 10.1694 22.3768C11.7513 22.0228 13.3681 21.8625 15 21.855C16.6325 21.8625 18.2567 22.023 19.8305 22.3767L19.8305 22.3767L19.8342 22.3775C21.0293 22.6399 22.1406 23.009 23.0161 23.6689Z" stroke="black" stroke-width="1.5"></path></svg>
+                                <a href="" className={style.sidebar_link}>Войти</a>
+                            </div>
+                    </NavLink>
                     <NavLink to="/Basket" className={style.NavLink}>
                         <div className={style.sidebar_box_icon}>
-                            <img src="https://img.icons8.com/material-outlined/384/shopping-cart--v2.png" alt="icon" height="40px"/>
-                            <p href="" className={style.sidebar_link}>Корзина</p>
+                        <svg viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect fill="white"></rect><path d="M13.02 21.875H27.1622L29.0372 11.5625H9.68348L7.56051 5H0V7.8125H5.51395L10.0636 21.875H13.02Z" fill="black"></path><path d="M13.1 30.3126C14.6533 30.3126 15.9125 29.0534 15.9125 27.5001C15.9125 25.9468 14.6533 24.6876 13.1 24.6876C11.5467 24.6876 10.2875 25.9468 10.2875 27.5001C10.2875 29.0534 11.5467 30.3126 13.1 30.3126Z" fill="black"></path><path d="M23.4125 30.3126C24.9658 30.3126 26.225 29.0534 26.225 27.5001C26.225 25.9468 24.9658 24.6876 23.4125 24.6876C21.8592 24.6876 20.6 25.9468 20.6 27.5001C20.6 29.0534 21.8592 30.3126 23.4125 30.3126Z" fill="black"></path></svg>
+                            <a href="" className={style.sidebar_link}>Корзина</a>
                         </div>
                         <span className={style.basket_number}>{Basket}</span>
                     </NavLink>
                     <a className={style.sidebar_box_icon}>
-                        <img src="https://svgsilh.com/svg_v2/24037.svg" alt="icon" height="40px"/>
+                        <svg  viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect  fill="white"></rect><path d="M26.9903 15.4654C26.9903 15.3832 27 15.3024 27 15.2198H26.9774C26.8682 13.8002 26.2173 12.4737 25.1552 11.5057C24.093 10.5378 22.698 10 21.2496 10C19.8011 10 18.4061 10.5378 17.344 11.5057C16.2818 12.4737 15.6309 13.8002 15.5217 15.2198H15.4774C15.3682 13.8002 14.7173 12.4737 13.6552 11.5057C12.593 10.5378 11.198 10 9.74956 10C8.30109 10 6.9061 10.5378 5.84396 11.5057C4.78181 12.4737 4.13093 13.8002 4.02167 15.2198H4C4 15.3024 4.00796 15.3832 4.00973 15.4654C4.00973 15.5288 4 15.5906 4 15.6545C4.00027 16.0452 4.04147 16.4349 4.12296 16.8173C5.35213 24.8965 15.5 30 15.5 30C15.5 30 25.6479 24.8965 26.877 16.8173C26.9585 16.4349 26.9997 16.0452 27 15.6545C27 15.5906 26.9925 15.5288 26.9903 15.4654Z" fill="black"></path></svg>
                         <p href="" className={style.sidebar_link}>Избранное</p>
                     </a>
             </nav>
