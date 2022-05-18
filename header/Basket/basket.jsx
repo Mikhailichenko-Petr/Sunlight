@@ -23,7 +23,7 @@ export const Basket =(props)=>{
                             <div>{Math.round((res.price-res.discount)/res.discount*100)}%</div>
                             <div>Купить</div>
                             <div>В избранное</div>
-                            <div onClick={delite}>Удалить</div>
+                            <div onClick={delite} className={style.delete}>Удалить</div>
                     </div>
                 )   
             })}

@@ -13,6 +13,7 @@ import { Pawnshop } from "./header/Pawnshop/Pawnshop";
 import { Authorization } from "./header/authorization/authorization";
 import { BasketContainer } from "./header/Basket/basketContainer";
 import { Basket } from "./header/Basket/basket";
+import { MainContainer } from "./main/mainContainer";
 
 
 
@@ -24,7 +25,7 @@ function App() {
       <div className={style.container}>
           <Header />
           <Routes>
-            <Route path='/' element={<Main />}/>
+            <Route path='/' element={<MainContainer/>}/>
             <Route path='/Exchange' element={<Exchange/>}/>
             <Route path='/Order_status' element={<Order_status/>}/>
             <Route path='/Shops' element={<Shops/>}/>
