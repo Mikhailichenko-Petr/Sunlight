@@ -10,8 +10,9 @@ import { Order_status } from "./Order_status/Order_status";
 import { Shops } from "./header/Shops/Shops";
 import { Delivery } from "./header/Delivery/Delivery";
 import { Pawnshop } from "./header/Pawnshop/Pawnshop";
-import { Basket } from "./header/Basket/basket";
 import { Authorization } from "./header/authorization/authorization";
+import { BasketContainer } from "./header/Basket/basketContainer";
+import { Basket } from "./header/Basket/basket";
 
 
 
@@ -29,7 +30,7 @@ function App() {
             <Route path='/Shops' element={<Shops/>}/>
             <Route path='/Delivery' element={<Delivery />}/>
             <Route path='/Pawnshop' element={<Pawnshop/>}/>
-            <Route path='/Basket' element={<Basket/>}/>
+            <Route path='/Basket' element={<BasketContainer/>}/>
             <Route path='/Authorizations' element={<Authorization/>}/>
           </Routes>
           <Footer />

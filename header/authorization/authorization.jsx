@@ -11,10 +11,10 @@ export const Authorization=()=>{
                     <button>Получить код</button>
                 </form>
                 <div class="agreement">
-                    Нажимая «<span class="js-agreement-text">Получить код</span>», я&nbsp;соглашаюсь
-                    с&nbsp;<a target="_blank" href="/loyalty_privilege/">условиями участия</a> в&nbsp;Клубе SUNLIGHT,
+                    Нажимая «<span class="js-agreement-text">Получить код</span>», я соглашаюсь
+                    с <a target="_blank" href="/loyalty_privilege/">условиями участия</a> в Клубе SUNLIGHT,
                     <a href="/confidential/" target="_blank">политикой конфиденциальности</a>
-                    и&nbsp;подтверждаю согласие на получение сообщений рекламного характера.
+                    и подтверждаю согласие на получение сообщений рекламного характера.
                     <br/>Отказаться от рассылки можно в личном кабинете.
                 </div>
             </div>

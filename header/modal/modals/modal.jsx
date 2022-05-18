@@ -1,6 +1,13 @@
+import axios from "axios";
 import React from "react";
 import style from "./modal.module.css"
 export const Modal = ({onClose}) => {
+
+    axios.get("https://api.cloudflare.com/client/v4/zones/70bb16f83cd32de5")
+    .then(res=>{
+        console.log(res);
+    })
+
     return(
         <div className={style.mobile_menu__list} onClick={onClose}>
                        <ul>

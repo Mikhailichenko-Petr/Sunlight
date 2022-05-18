@@ -4,28 +4,16 @@ import style from "./basket.module.css"
 import uniqid from "uniqid"
 
 export const Basket =(props)=>{
-    const data = useSelector(res=>res.BasketReducer.Basket)
-    const dispatch=useDispatch()
-    console.log(data);
-    let allPrice = 0
-    let allWithoutDiscount = 0
-    let allDiscount = 0
-    data.forEach(function(item) {
-       allPrice += item.price
-       allWithoutDiscount += item.discount
-       allDiscount += item.discount - item.price
-    });
-
     const delite=(e)=>{
         e.preventDefault()
         const id = e.target.parentElement.id
-        dispatch(BasketDeliteAC(id))
+        props.delite(id)
     }
     return(
         <div className={style.basket}>
           <div>
             <h1>Корзина</h1>
-            {data.map(res=>{
+            {props.data.map(res=>{
                 return(
                     <div id={res.id} className={style.product_data}>
                             <div>{res.name}</div>
@@ -43,15 +31,15 @@ export const Basket =(props)=>{
            <div className={style.total}>
                <div className={style.total_box}>
                    <div>итого</div>
-                   <div>{allPrice} ₽</div>
+                   <div>{props.allPrice} ₽</div>
                </div>
                <div className={style.total_box}>
-                    <div>{data.length} товара на сумму </div>
-                    <div>{allWithoutDiscount} ₽</div>
+                    <div>{props.data.length} товара на сумму </div>
+                    <div>{props.allWithoutDiscount} ₽</div>
                </div>
                <div className={style.total_box}>
                     <div>Сумма скилок и акций</div>
-                    <div>-{allDiscount} ₽</div>
+                    <div>-{props.allDiscount} ₽</div>
                </div>
                <button>перейти к оформлению</button>
            </div>
