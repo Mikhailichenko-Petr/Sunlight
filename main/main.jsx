@@ -1,14 +1,14 @@
-import { Bio } from "./bio/bio"
 import style from "./main.module.css"
 import React from "react"
 import NavContainer from "./nav_gallery/navContainer"
+import { BioContainer } from "./bio/bioContainer"
 
 
 export const Main = (props) => {
     return(
         <div className={style.box}>
             <NavContainer  />
-            <Bio />
+            <BioContainer />
             <main className={style.main}>
             <section className={style.content}>
                 <div className={style.content_info}>

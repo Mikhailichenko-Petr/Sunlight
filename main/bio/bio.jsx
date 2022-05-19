@@ -4,12 +4,8 @@ import { useDispatch } from "react-redux"
 import { BasketaAddAC } from "../../redux/action"
 import uniqid from "uniqid"
 
-export const Bio = () => {
-    const id =uniqid()
-    const dispatch=useDispatch()
-    const add_235978=()=>{
-        dispatch(BasketaAddAC({id:id, name:'Золотые серьги. Артикул: 235978', price:17997,discount:59990, img:'https://g9.sunlight.net/media/products/19464f4715ff1acb701efc6716f214e043065062.jpg'}))
-    }
+export const Bio = (props) => {
+
     return(
         <div className={style.bio}>
             <div>
@@ -69,7 +65,7 @@ export const Bio = () => {
             </div>
             <div className={style.bio_four_line}>
                 <div className={style.bio_four_line_box}>
-                    <button className={style.add_to_basket} onClick={add_235978}>Добавить в корзину</button>
+                    <button className={style.add_to_basket} onClick={props.add_basket}>Добавить в корзину</button>
                     <button className={style.add_to_favorites}>♥</button>
                 </div>
                 <button className={style.bio_four_line_box_two}>Проверить наличие в магазине</button>
