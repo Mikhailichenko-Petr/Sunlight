@@ -4,7 +4,7 @@ import { DeliveryAddAC } from "../../redux/action"
 import style from "./Delivery.module.css"
 
 
-export const Delivery =(props)=>{
+export const Delivery =()=>{
     const dispatch=useDispatch()
     const data=useSelector(res=>res.DeliveryReducer)
     const text_one=()=>{
