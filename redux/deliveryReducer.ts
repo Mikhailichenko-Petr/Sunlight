@@ -1,10 +1,5 @@
 import { DELIVERY_ADD } from "./types";
 
-type ActionType={
-    type:string
-    text:string
-    header:string
-}
 
 type InitialState={
     Header:string
@@ -16,7 +11,7 @@ const initialState: InitialState={
     text: 'описание'
 }
 
-export const DeliveryReducer=(state:InitialState = initialState,action:ActionType)=>{
+export const DeliveryReducer=(state:InitialState = initialState,action:any)=>{
     console.log(action,'delivery');
     switch(action.type){
         case DELIVERY_ADD:String:

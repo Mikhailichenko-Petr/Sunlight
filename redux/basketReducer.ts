@@ -1,5 +1,3 @@
-
-import { BasketContainer } from './../header/Basket/basketContainer';
 import { BASKET_ADD, BASKET_DELITE } from "./types";
 
 type Product={
@@ -8,34 +6,31 @@ type Product={
     price:number
     discount:number
     img:string
+    
 }
 type InitialState={
-    Basket:Array<Product>
+    Basket:Product[]
 }
 const initialState: InitialState ={
     Basket: []
 }
 
-type ActionType={
-    data:Array<Product>
-    type:string
-    id:string
-}
 
-
-
-export const BasketReducer=(state:InitialState = initialState,action:ActionType)=>{
-    
+export const BasketReducer=(state = initialState,action:any):InitialState=>{
     switch(action.type){
-        case BASKET_ADD:string:
+        
+        case BASKET_ADD:
+            console.log([...state.Basket, action.data],'wwwwwwwwwwwwwwwwww');
             return{
                 ...state,
-                Basket: [...state.Basket, action.data]
+                Basket: [...state.Basket, action.data],
             }
-        case BASKET_DELITE:string:
+            
+            
+        case BASKET_DELITE:
             return(()=>{
-                const id:string= action.id
-                const Basket: Array<Product> = state.Basket
+                const id= action.id
+                const Basket = state.Basket
                 const itemIndex:number = Basket.findIndex(res=> res.id === id)
                 const nextComments = [
                     ...Basket.slice(0,itemIndex),

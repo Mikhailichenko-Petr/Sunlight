@@ -1,20 +1,3 @@
-//  types: 'likes'
-
-export const LIKE = "LIKE"
-export const DISLIKE = 'DISLIKE'
-//////////
-
-//  types: 'Title'
-
-export const VALUE = "VALUE"
-//////////
-
-// types: 'comment'
-
-export const COMMENTS ="COMMENTS"
-export const COMMENTS_UPDATE ="COMMENTS_UPDATE"
-export const COMMENTS_DELITE ="COMMENTS_DELITE"
-
 // types: 'thunk'
 
 export const COMMENTS_LOAD ="COMMENTS_LOAD"

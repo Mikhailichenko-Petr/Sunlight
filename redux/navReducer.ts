@@ -1,23 +1,17 @@
 import { NAV_IMG1, NAV_IMG2, NAV_IMG3, NAV_VIDEO } from "./types";
 
-interface InitialState2 {
-    Image:string
+interface InitialState {
+    Image:string|null
     video:string
 }
 
-type ActionType={
-    type:string
-    data:string
-}
 
-
-
-const initialState: InitialState2 = {
+const initialState: InitialState = {
     Image: 'https://g9.sunlight.net/media/products/19464f4715ff1acb701efc6716f214e043065062.jpg',
     video: ''
 }
 
-export const NavReducer = (state:InitialState2 = initialState, action:ActionType) => {
+export const NavReducer = (state = initialState, action:any):InitialState => {
     console.log(action,'Nav');
     switch (action.type) {
         case NAV_VIDEO:
