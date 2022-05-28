@@ -1,11 +1,11 @@
 import axios from "axios";
 import React from "react";
 import style from "./modal.module.css"
-export const Modal = ({onClose}) => {
+export const Modal = () => {
 
 
     return(
-        <div className={style.mobile_menu__list} onClick={onClose}>
+        <div className={style.mobile_menu__list}>
                        <ul>
                             <li className={style.mobile_menu__item}><a href="#" className={style.mobile_menu__link}><img src="https://g8.sunlight.net/media/content/desktop-menu/categories/35f527efb07355870dee67f1f1f50a6c8bd25143.svg" alt="icon" width="30px"/><p>Все украшения</p> </a></li>
                             <li className={style.mobile_menu__item}><a href="#" className={style.mobile_menu__link}><img src="https://g6.sunlight.net/media/content/desktop-menu/categories/0d09ba4834b1a1a01c0e7c1da6c823d792530e0e.svg" alt="icon" width="30px"/> <p>Новинки</p> </a></li>

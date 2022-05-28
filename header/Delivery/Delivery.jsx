@@ -151,7 +151,7 @@ export const Delivery =()=>{
                 <div onClick={text_five} className={style.list}>5.Оплата заказа</div>
                 <div onClick={text_six} className={style.list}>6.Обменять или вернуть просто!</div>
               </div>
-              <div>
+              <div className={style.listDescription}>
                 <h2>{data.Header}</h2>
                 <p>{data.text}</p>
               </div>

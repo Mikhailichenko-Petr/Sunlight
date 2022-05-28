@@ -1,3 +1,4 @@
+
 import { DELIVERY_ADD } from "./types";
 
 
@@ -7,12 +8,11 @@ type InitialState={
 }
 
 const initialState: InitialState={
-    Header: 'Text',
-    text: 'описание'
+    Header: '1.Срок доставки',
+    text: 'Дата и интервал доставки зависят от адреса получения и будут указаны в Корзине при оформлении заказа. Если в заказе несколько изделий, они могут быть доставлены разными посылками в разное время. Накануне дня доставки Вас уведомит Транспортная компания СМС сообщением или звонком на указанный в заказе номер телефона. В день доставки за 30 мин. до доставки с Вами свяжется курьер.'
 }
 
-export const DeliveryReducer=(state:InitialState = initialState,action:any)=>{
-    console.log(action,'delivery');
+export const DeliveryReducer=(state = initialState,action:any):InitialState=>{
     switch(action.type){
         case DELIVERY_ADD:String:
             return{
