@@ -1,8 +1,5 @@
 import style from "./bio.module.css"
 import React from "react"
-import { useDispatch } from "react-redux"
-import { BasketaAddAC } from "../../redux/action"
-import uniqid from "uniqid"
 
 export const Bio = (props) => {
 

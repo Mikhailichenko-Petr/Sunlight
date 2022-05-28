@@ -1,8 +1,8 @@
 // types: 'thunk'
 
-export const COMMENTS_LOAD ="COMMENTS_LOAD"
-export const LOADER ="LOADER"
-export const LOADER_END ="LOADER_END"
+// export const COMMENTS_LOAD ="COMMENTS_LOAD"
+// export const LOADER ="LOADER"
+// export const LOADER_END ="LOADER_END"
 
 // types: 'NAV'
 

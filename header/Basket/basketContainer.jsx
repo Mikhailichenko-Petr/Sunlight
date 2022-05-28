@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { BasketDeliteAC } from "../../redux/action"
+import { BasketDeliteAC } from "../../redux/action.ts"
 import { Basket } from "./basket"
 
 export const BasketContainer =()=>{

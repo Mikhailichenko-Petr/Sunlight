@@ -1,3 +1,4 @@
+import { ActionsTypes } from './action';
 import { NAV_IMG1, NAV_IMG2, NAV_IMG3, NAV_VIDEO } from "./types";
 
 interface InitialState {
@@ -11,7 +12,7 @@ const initialState: InitialState = {
     video: ''
 }
 
-export const NavReducer = (state = initialState, action:any):InitialState => {
+export const NavReducer = (state = initialState, action:ActionsTypes):InitialState => {
     console.log(action,'Nav');
     switch (action.type) {
         case NAV_VIDEO:

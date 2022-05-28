@@ -1,6 +1,6 @@
 import React from "react"
 import { useDispatch } from "react-redux"
-import { BasketaAddAC } from "../../redux/action"
+import { BasketaAddAC } from "../../redux/action.ts"
 import uniqid from "uniqid"
 import { Bio } from "./bio"
 

@@ -1,7 +1,9 @@
-
+// Packgages
 import {Route,Routes} from "react-router-dom";
 import style from "./app.module.css"
+// Styles
 import React from "react"
+// Components
 import { Footer } from './footer/footer';
 import { Exchange } from "./Exchange_and_return/Exchange";
 import { Order_status } from "./Order_status/Order_status";

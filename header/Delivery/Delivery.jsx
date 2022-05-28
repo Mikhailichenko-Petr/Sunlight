@@ -1,6 +1,6 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { DeliveryAddAC } from "../../redux/action"
+import { DeliveryAddAC } from "../../redux/action.ts"
 import style from "./Delivery.module.css"
 
 

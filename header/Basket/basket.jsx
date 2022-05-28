@@ -1,7 +1,5 @@
-import { useDispatch, useSelector } from "react-redux"
-import { BasketDeliteAC } from "../../redux/action"
 import style from "./basket.module.css"
-import uniqid from "uniqid"
+
 
 export const Basket =(props)=>{
     const delite=(e)=>{

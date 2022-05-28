@@ -1,7 +1,6 @@
-import style from "./nav.module.css"
 import React from "react"
 import { connect } from "react-redux"
-import { Nav2AC, Nav1AC, Nav3AC, NavVideo } from "../../redux/action"
+import { Nav2AC, Nav1AC, Nav3AC, NavVideo } from "../../redux/action.ts"
 import { Nav } from "./nav_gallery"
 
 

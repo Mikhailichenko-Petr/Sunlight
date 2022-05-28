@@ -1,8 +1,7 @@
-import React, { useState } from "react"
-import { Modal } from "./modal/modals/modal";
+import React, { FC, useState } from "react"
 import { useSelector } from "react-redux";
 import { Order_status } from "../Order_status/Order_status";
-import { Header } from "./header";
+import { Header } from "./header.tsx";
 
 
 

@@ -1,9 +1,7 @@
-import { Bio } from "./bio/bio"
-import style from "./main.module.css"
-import  Nav  from "./nav_gallery/nav_gallery"
-import React, { useEffect, useRef } from "react"
+
+import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { BasketaAddAC } from "../redux/action"
+import { BasketaAddAC } from "../redux/action.ts"
 import { Main } from "./main"
 import uniqid from "uniqid"
 
