@@ -10,10 +10,10 @@ import { Order_status } from "./Order_status/Order_status";
 import { Shops } from "./header/Shops/Shops";
 import { Pawnshop } from "./header/Pawnshop/Pawnshop";
 import { Authorization } from "./header/authorization/authorization";
-import { BasketContainer } from "./header/Basket/basketContainer";
+import { BasketContainer } from "./header/Basket/basketContainer.jsx";
 import { MainContainer } from "./main/mainContainer";
-import { HeaderContainer } from "./header/HeaderContainer";
 import { DeliveryContainer } from "./header/Delivery/DeliveryContainer";
+import { HeaderContainer } from "./header/HeaderContainer.tsx";
 
 
 

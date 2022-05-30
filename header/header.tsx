@@ -1,6 +1,6 @@
 // @ts-ignore
 import style from "./header.module.css"
-import React, { FC, useState } from "react"
+import React, { FC } from "react"
 import {NavLink } from "react-router-dom"
 import { Modal } from "./modal/modals/modal";
 
@@ -10,7 +10,6 @@ type HeaderTypes={
 }
 
 export const Header:FC<HeaderTypes>= ({Basket,setModal}) => {
-    
     return(
         <header className={style.header} >
         <div className={style.header_block1}>

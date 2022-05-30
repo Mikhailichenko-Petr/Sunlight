@@ -1,5 +1,6 @@
 import { FC } from "react"
-import { InitialState, Product } from "../../redux/basketReducer"
+import { Product } from "../../redux/basketReducer"
+//@ts-ignore
 import style from "./basket.module.css"
 
 type DataType={
@@ -8,7 +9,6 @@ type DataType={
 }
 type BasketType={
     data:DataType
-    dataLength:number
     delite:(id:string)=>void
     allDiscount:number
     allPrice:number
