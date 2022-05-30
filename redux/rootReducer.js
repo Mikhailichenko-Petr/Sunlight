@@ -9,5 +9,3 @@ export const rootReducer= combineReducers({
     DeliveryReducer
 })
 
-// type RootReducerType = typeof rootReducer
-// export type AppStoreType = ReturnType<RootReducerType>

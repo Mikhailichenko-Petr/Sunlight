@@ -1,13 +1,12 @@
 import { useDispatch, useSelector } from "react-redux"
 import { BasketDeliteAC } from "../../redux/action.ts"
-import { Basket } from "./basket"
+import { Basket } from "./basket.tsx"
 
 export const BasketContainer =()=>{
     const data = useSelector(res=>res.BasketReducer.Basket)
     const dispatch=useDispatch()
    
     const delite=(id)=>{
-        console.log(id,'id');
         dispatch(BasketDeliteAC(id))
     }
 

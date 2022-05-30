@@ -1,17 +1,31 @@
+import { FC } from "react"
+import { InitialState, Product } from "../../redux/basketReducer"
 import style from "./basket.module.css"
 
+type DataType={
+    length:string
+    map:any
+}
+type BasketType={
+    data:DataType
+    dataLength:number
+    delite:(id:string)=>void
+    allDiscount:number
+    allPrice:number
+    allWithoutDiscount:number
+}
 
-export const Basket =(props)=>{
-    const delite=(e)=>{
+export const Basket:FC<BasketType> =({data,delite,allDiscount,allPrice,allWithoutDiscount})=>{
+    const deleteProduct=(e)=>{
         e.preventDefault()
-        const id = e.target.parentElement.id
-        props.delite(id)
+        const id:string = e.target.parentElement.id
+        delite(id)
     }
     return(
         <div className={style.basket}>
           <div>
             <h1>Корзина</h1>
-            {props.data.map(res=>{
+            {data.map((res:Product)=>{
                 return(
                     <div id={res.id} className={style.product_data}>
                             <div>{res.name}</div>
@@ -21,7 +35,7 @@ export const Basket =(props)=>{
                             <div>{Math.round((res.price-res.discount)/res.discount*100)}%</div>
                             <div>Купить</div>
                             <div>В избранное</div>
-                            <div onClick={delite} className={style.delete}>Удалить</div>
+                            <div onClick={deleteProduct} className={style.delete}>Удалить</div>
                     </div>
                 )   
             })}
@@ -29,15 +43,15 @@ export const Basket =(props)=>{
            <div className={style.total}>
                <div className={style.total_box}>
                    <div>итого</div>
-                   <div>{props.allPrice} ₽</div>
+                   <div>{allPrice} ₽</div>
                </div>
                <div className={style.total_box}>
-                    <div>{props.data.length} товара на сумму </div>
-                    <div>{props.allWithoutDiscount} ₽</div>
+                    <div>{data.length} товара на сумму </div>
+                    <div>{allWithoutDiscount} ₽</div>
                </div>
                <div className={style.total_box}>
                     <div>Сумма скилок и акций</div>
-                    <div>-{props.allDiscount} ₽</div>
+                    <div>-{allDiscount} ₽</div>
                </div>
                <button>перейти к оформлению</button>
            </div>
