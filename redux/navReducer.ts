@@ -1,9 +1,9 @@
 import { ActionsTypes } from './action';
 import { NAV_IMG1, NAV_IMG2, NAV_IMG3, NAV_VIDEO } from "./types";
 
-interface NavReducerType {
-    Image:string|null
-    video:string
+export interface NavReducerType {
+    Image?:string
+    video?:string
 }
 
 
@@ -13,28 +13,23 @@ const initialState: NavReducerType = {
 }
 
 export const NavReducer = (state = initialState, action:ActionsTypes):NavReducerType => {
-    console.log(action,'Nav');
+    console.log(state,'Nav');
     switch (action.type) {
         case NAV_VIDEO:
             return {
-                ...state,
-                Image: null,
                 video: action.data
             }
         case NAV_IMG1:
             return {
-                ...state,
-                Image: action.data
+                Image: action.data,
             }
         case NAV_IMG2:
             return {
-                ...state,
-                Image: action.data
+                Image: action.data,
             }
         case NAV_IMG3:
             return {
-                ...state,
-                Image: action.data
+                Image: action.data,
             }
         default:
             return state

@@ -7,11 +7,11 @@ export const Authorization=()=>{
             <div>
                 <h3>Войти по номеру</h3>
                 <form action="">
-                    <input  name="phone"  placeholder="Введите номер телефона" type="tel" pattern="\+7\(9\d{2}\)\d{3}\-\d{2}\-\d{2}" tabindex="1" autofocus="" autocomplete="off" required="" maxlength="18" />
+                    <input  name="phone"  placeholder="Введите номер телефона" type="tel" pattern="\+7\(9\d{2}\)\d{3}\-\d{2}\-\d{2}" required={undefined}  />
                     <button>Получить код</button>
                 </form>
-                <div class="agreement">
-                    Нажимая «<span class="js-agreement-text">Получить код</span>», я соглашаюсь
+                <div className="agreement">
+                    Нажимая «<span className="js-agreement-text">Получить код</span>», я соглашаюсь
                     с <a target="_blank" href="/loyalty_privilege/">условиями участия</a> в Клубе SUNLIGHT,
                     <a href="/confidential/" target="_blank">политикой конфиденциальности</a>
                     и подтверждаю согласие на получение сообщений рекламного характера.

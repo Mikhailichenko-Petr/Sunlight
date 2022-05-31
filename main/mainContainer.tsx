@@ -1,13 +1,18 @@
-
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { BasketaAddAC } from "../redux/action.ts"
+import { BasketaAddAC } from "../redux/action"
 import { Main } from "./main"
 import uniqid from "uniqid"
 
-export const MainContainer = (props) => {
-    const Image=useSelector(state=> state.NavReducer.Image)
-    const Video=useSelector(state=> state.NavReducer.video)
+import { NavReducerType } from "../redux/navReducer"
+
+type MainContainerType={
+    NavReducer:NavReducerType
+}
+
+export const MainContainer = () => {
+    const Image=useSelector((state:MainContainerType)=> state.NavReducer.Image)
+    const Video=useSelector((state:MainContainerType)=> state.NavReducer.video)
 
     const dispath=useDispatch()
 
@@ -34,6 +39,6 @@ export const MainContainer = (props) => {
     }
    
     return(
-        <Main Image={Image} Video={Video} add_108789={add_108789} add_151996={add_151996} add_158125={add_158125} add_285237={add_285237} add_38141={add_38141} add_66267={add_66267} />
+        <Main NavImage={Image} Video={Video} add_108789={add_108789} add_151996={add_151996} add_158125={add_158125} add_285237={add_285237} add_38141={add_38141} add_66267={add_66267} />
     )
 }

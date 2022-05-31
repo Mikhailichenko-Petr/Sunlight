@@ -1,10 +1,21 @@
 import style from "./main.module.css"
-import React from "react"
+import React, { FC } from "react"
 import NavContainer from "./nav_gallery/navContainer"
 import { BioContainer } from "./bio/bioContainer"
 
+type MainType={
+   NavImage?:string
+   Video?:string
+   add_108789:()=>void
+   add_151996:()=>void
+   add_158125:()=>void
+   add_285237:()=>void
+   add_38141:()=>void
+   add_66267:()=>void
+}
 
-export const Main = (props) => {
+export const Main:FC<MainType> = ({NavImage, Video, add_108789, add_151996, add_158125, add_285237, add_38141, add_66267}) => {
+    
     return(
         <div className={style.box}>
             <NavContainer  />
@@ -15,9 +26,9 @@ export const Main = (props) => {
                     <section className={style.content_gallery}>
                         <div className={style.gallery_items}>
                             <div className={style.gallery_item}>
-                                {props.Image ? <img src={props.Image} /> 
-                                : <video playsinline="" autoplay="" loop="" muted="">
-                                       <source src={props.Video} type="video/mp4" />
+                                {NavImage ? <img alt="NavIcon" src={NavImage} /> 
+                                : <video playsInline autoPlay loop muted >
+                                       <source src={Video} type="video/mp4" />
                                   </video>}
                             </div>
                         </div>
@@ -33,7 +44,7 @@ export const Main = (props) => {
                             </a>
                             <a href="https://sunlight.net/catalog/bracelets_151996.html" className={style.products_name}>Золотой браслет. Артикул: 151996</a>
                             <p>59 070₽</p>
-                            <button href="https://sunlight.net/catalog/bracelets_151996.html" className={style.products_buy} onClick={props.add_151996} >Добавить в корзину</button>
+                            <button className={style.products_buy} onClick={add_151996} >Добавить в корзину</button>
                         </div>
                         <div className={style.products_item}>
                             <a href="https://sunlight.net/catalog/bracelets_38141.html" className={style.products_image}>
@@ -41,7 +52,7 @@ export const Main = (props) => {
                             </a>
                             <a href="https://sunlight.net/catalog/bracelets_38141.html" className={style.products_name}>Золотой браслет. Артикул: 38141</a>
                             <p>36 740₽</p>
-                            <button className={style.products_buy} onClick={props.add_38141}>Добавить в корзину</button>
+                            <button className={style.products_buy} onClick={add_38141}>Добавить в корзину</button>
                         </div>
                         <div className={style.products_item}>
                             <a href="https://sunlight.net/catalog/ring_108789.html" className={style.products_image}>
@@ -49,7 +60,7 @@ export const Main = (props) => {
                             </a>
                             <a href="https://sunlight.net/catalog/ring_108789.html" className={style.products_name}>Золотое кольцо с фианитами. Артикул: 108789</a>
                             <p>44 990₽</p>
-                            <button href="https://sunlight.net/catalog/ring_108789.html" className={style.products_buy} onClick={props.add_108789} >Добавить в корзину</button>
+                            <button className={style.products_buy} onClick={add_108789} >Добавить в корзину</button>
                         </div>
                         <div className={style.products_item}>
                             <a href="https://sunlight.net/catalog/ring_66267.html" className={style.products_image}>
@@ -57,7 +68,7 @@ export const Main = (props) => {
                             </a>
                             <a href="https://sunlight.net/catalog/ring_66267.html" className={style.products_name}>Золотой кольцо с фианитами. Артикул: 66267</a>
                             <p>24 990₽</p>
-                            <button href="https://sunlight.net/catalog/ring_66267.html" className={style.products_buy} onClick={props.add_66267} >Добавить в корзину</button>
+                            <button className={style.products_buy} onClick={add_66267} >Добавить в корзину</button>
                         </div>
                         <div className={style.products_item}>
                             <a href="https://sunlight.net/catalog/ring_158125.html" className={style.products_image}>
@@ -65,7 +76,7 @@ export const Main = (props) => {
                             </a>
                             <a href="https://sunlight.net/catalog/ring_158125.html" className={style.products_name}>Золотое кольцо с фианитами. Артикул: 158125</a>
                             <p>12 490₽</p>
-                            <button href="https://sunlight.net/catalog/ring_158125.html" className={style.products_buy} onClick={props.add_158125}>Добавить в корзину</button>
+                            <button className={style.products_buy} onClick={add_158125}>Добавить в корзину</button>
                         </div>
                         <div className={style.products_item}>
                             <a href="https://sunlight.net/catalog/earring_285237.html" className={style.products_image}>
@@ -73,7 +84,7 @@ export const Main = (props) => {
                             </a>
                             <a href="https://sunlight.net/catalog/earring_285237.html" className={style.products_name}>Золотые серьги с топазами и бриллиантами. Артикул: 285237</a>
                             <p>72 990₽</p>
-                            <button href="https://sunlight.net/catalog/earring_285237.html" className={style.products_buy} onClick={props.add_285237}>Добавить в корзину</button>
+                            <button className={style.products_buy} onClick={add_285237}>Добавить в корзину</button>
                         </div>
                     </div> 
                 </section>

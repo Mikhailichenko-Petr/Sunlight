@@ -9,9 +9,9 @@ import { Exchange } from "./Exchange_and_return/Exchange";
 import { Order_status } from "./Order_status/Order_status";
 import { Shops } from "./header/Shops/Shops";
 import { Pawnshop } from "./header/Pawnshop/Pawnshop";
-import { Authorization } from "./header/authorization/authorization";
+import { Authorization } from "./header/authorization/authorization.tsx";
 import { BasketContainer } from "./header/Basket/basketContainer.tsx";
-import { MainContainer } from "./main/mainContainer";
+import { MainContainer } from "./main/mainContainer.tsx";
 import { DeliveryContainer } from "./header/Delivery/DeliveryContainer.tsx";
 import { HeaderContainer } from "./header/HeaderContainer.tsx";
 

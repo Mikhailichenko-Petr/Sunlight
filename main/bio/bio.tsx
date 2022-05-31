@@ -1,7 +1,11 @@
 import style from "./bio.module.css"
-import React from "react"
+import React, { FC } from "react"
 
-export const Bio = (props) => {
+type BioContainer={
+    add_basket: ()=>void
+}
+
+export const Bio:FC<BioContainer> = ({add_basket}) => {
 
     return(
         <div className={style.bio}>
@@ -9,29 +13,29 @@ export const Bio = (props) => {
             <div>
                 <div className={style.bio_one_line}>
                     <span>
-                        <a href="#">108 отзывов</a> 
+                        <a href="https://sunlight.net/cls">108 отзывов</a> 
                     </span>
                     <span className={style.bio_reviews}>
                     <div className={style.review_stars_wrap}>
                             <div className={style.review_stars}>
-                                <input className={style.star-4} type="radio" name="stars"/>
-                                <label title="Отлично" for="star-4">
+                                <input className={style.star4} type="radio" name="stars"/>
+                                <label title="Отлично" htmlFor="star-4">
                                     <i className={style.fas}>★</i>
                                 </label>
-                                <input className={style.star-3} type="radio" name="stars" checked="checked" />
-                                <label title="Хорошо" for="star-3">
+                                <input className={style.star3} type="radio" name="stars"  />
+                                <label title="Хорошо" htmlFor="star-3">
                                     <i className={style.fas}>★</i>
                                 </label>
-                                <input className={style.star-2} type="radio" name="stars"/>
-                                <label title="Нормально" for="star-2">
+                                <input className={style.star2} type="radio" name="stars"/>
+                                <label title="Нормально" htmlFor="star-2">
                                     <i className={style.fas}>★</i>
                                 </label>
-                                <input className={style.star-1} type="radio" name="stars"/>
-                                <label title="Плохо" for="star-1">
+                                <input className={style.star1} type="radio" name="stars"/>
+                                <label title="Плохо" htmlFor="star-1">
                                     <i className={style.fas}>★</i>
                                 </label>
-                                <input className={style.star-0} type="radio" name="stars"/>
-                                <label title="Ужасно" for="star-0">
+                                <input className={style.star0} type="radio" name="stars"/>
+                                <label title="Ужасно" htmlFor="star-0">
                                     <i className={style.fas}>★</i>
                                 </label>
                             </div>
@@ -50,7 +54,7 @@ export const Bio = (props) => {
                         <p>17 997 ₽</p>
                     </div>
                     <div>
-                        <p><strike>59 990 ₽</strike></p>
+                        <p>59 990 ₽</p>
                     </div>
                     <div>
                         <p>− 70%</p>
@@ -62,7 +66,7 @@ export const Bio = (props) => {
             </div>
             <div className={style.bio_four_line}>
                 <div className={style.bio_four_line_box}>
-                    <button className={style.add_to_basket} onClick={props.add_basket}>Добавить в корзину</button>
+                    <button className={style.add_to_basket} onClick={add_basket}>Добавить в корзину</button>
                     <button className={style.add_to_favorites}>♥</button>
                 </div>
                 <button className={style.bio_four_line_box_two}>Проверить наличие в магазине</button>
