@@ -16,7 +16,7 @@ type BasketType={
 }
 
 export const Basket:FC<BasketType> =({data,delite,allDiscount,allPrice,allWithoutDiscount})=>{
-    const deleteProduct=(e)=>{
+    const deleteProduct=(e: any)=>{
         e.preventDefault()
         const id:string = e.target.parentElement.id
         delite(id)

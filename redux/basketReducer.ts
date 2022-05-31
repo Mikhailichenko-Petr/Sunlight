@@ -9,15 +9,15 @@ export type Product={
     img:string
     
 }
-export type InitialState={
+export type BasketReducerType={
     Basket:Product[]
 }
-const initialState: InitialState ={
+const initialState: BasketReducerType ={
     Basket: []
 }
 
 
-export const BasketReducer=(state = initialState,action:ActionsTypes):InitialState=>{
+export const BasketReducer=(state = initialState,action:ActionsTypes):BasketReducerType=>{
     switch(action.type){
         case BASKET_ADD:
             return{

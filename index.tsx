@@ -10,6 +10,9 @@ import { rootReducer } from './redux/rootReducer';
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
+export type AppDispatch = typeof store.dispatch
+
+// @ts-ignore
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>

@@ -1,10 +1,19 @@
-import React from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { DeliveryAddAC } from "../../redux/action.ts"
+import React, {FC} from "react"
+import { DeliveryReducerType } from "../../redux/deliveryReducer"
+
 import style from "./Delivery.module.css"
 
+type DeliveryType={
+  data: DeliveryReducerType
+  question_one: ()=> void
+  question_two: ()=> void
+  question_three: ()=> void
+  question_four: ()=> void
+  question_five: ()=> void 
+  question_six: ()=> void
+}
 
-export const Delivery =({data,question_one,question_two,question_three,question_four,question_five,question_six})=>{ 
+export const Delivery:FC<DeliveryType> =({data,question_one,question_two,question_three,question_four,question_five,question_six})=>{ 
     return (
       <div className={style.Delivery}>
         <div><h1>Доставка в г.Москва</h1></div>
