@@ -24,7 +24,7 @@ export const Order_status =({ isVisible = false, onClose })=>{
             <div className={style.modal_header}>
               <h3 className={style.modal_title}><h1>Узнать статус заказа</h1></h3>
               <span className={style.modal_close} onClick={onClose}>
-                &times;
+                &times;d
               </span>
             </div>
             <div className={style.modal_body}>
@@ -37,3 +37,5 @@ export const Order_status =({ isVisible = false, onClose })=>{
         </div>
       );
 }
+
+
