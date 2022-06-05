@@ -8,7 +8,7 @@ import { Footer } from './footer/footer';
 import { Exchange } from "./Exchange_and_return/Exchange";
 import { Order_status } from "./Order_status/Order_status";
 import { Shops } from "./header/Shops/Shops";
-import { Pawnshop } from "./header/Pawnshop/Pawnshop";
+import {Pawnshop} from "./header/Pawnshop/Pawnshop";
 import { Authorization } from "./header/authorization/authorization.tsx";
 import { BasketContainer } from "./header/Basket/basketContainer.tsx";
 import { MainContainer } from "./main/mainContainer.tsx";

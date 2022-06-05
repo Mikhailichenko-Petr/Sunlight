@@ -1,18 +1,19 @@
 import { Product } from './basketReducer';
-import {NAV_IMG2, NAV_IMG1, NAV_IMG3, NAV_VIDEO, BASKET_ADD, BASKET_DELITE, DELIVERY_ADD } from "./types";
+import {NAV_IMG2, NAV_IMG1, NAV_IMG3, NAV_VIDEO, BASKET_ADD, BASKET_DELITE, DELIVERY_ADD, IMAGE_DOG } from "./types";
 
 export type ActionsTypes = Nav1Type|Nav2Type|Nav3Type|NavVideoType|BasketAddType|BasketDelteType|DeliveryAddType
 
-export function CommentLoadAC(){
-  //@ts-ignore
-    return async dispatch => {
-        const response = await fetch('https://jsonplaceholder.typicode.com/comments?_limit=10');
-        const json = await response.json()
-        dispatch({
-          //@ts-ignore
-            type: COMMENTS_LOAD,
-            data:json
-        })
+///////////// redux thunk
+
+
+type ImageDogType={
+  type: typeof IMAGE_DOG
+  data: string
+}
+export function ImageDogAC(data:any):ImageDogType {
+    return {
+      type: IMAGE_DOG,
+      data
     }
 }
 

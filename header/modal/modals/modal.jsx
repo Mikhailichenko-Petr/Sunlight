@@ -1,14 +1,11 @@
-import axios from "axios";
 import React from "react";
-import { CommentLoadAC } from "../../../redux/action";
+
 import style from "./modal.module.css"
-export const Modal = () => {
-
-
+export const Modal = ({decorations}) => {
     return(
         <div className={style.mobile_menu__list}>
                        <ul>
-                            <li className={style.mobile_menu__item} onClick={CommentLoadAC}><a href="#" className={style.mobile_menu__link}><img src="https://g8.sunlight.net/media/content/desktop-menu/categories/35f527efb07355870dee67f1f1f50a6c8bd25143.svg" alt="icon" width="30px"/><p>Все украшения</p> </a></li>
+                            <li className={style.mobile_menu__item}><a href="#" className={style.mobile_menu__link} onClick={decorations}><img src="https://g8.sunlight.net/media/content/desktop-menu/categories/35f527efb07355870dee67f1f1f50a6c8bd25143.svg" alt="icon" width="30px"/><p>Все украшения</p> </a></li>
                             <li className={style.mobile_menu__item}><a href="#" className={style.mobile_menu__link}><img src="https://g6.sunlight.net/media/content/desktop-menu/categories/0d09ba4834b1a1a01c0e7c1da6c823d792530e0e.svg" alt="icon" width="30px"/> <p>Новинки</p> </a></li>
                             <li className={style.mobile_menu__item}><a href="#" className={style.mobile_menu__link}><img src="https://g0.sunlight.net/media/content/desktop-menu/categories/01468a634f971dc4868efd5fc81593321eacd74b.svg" alt="icon" width="30px"/> <p>Акции</p> </a></li>
                             <li className={style.mobile_menu__item}><a href="#" className={style.mobile_menu__link}><img src="https://g5.sunlight.net/media/content/desktop-menu/categories/961b368deeaa65c1f5ee79e790da4a5b0bd333ab.svg" alt="icon" width="30px"/> <p>Золото</p> </a></li>

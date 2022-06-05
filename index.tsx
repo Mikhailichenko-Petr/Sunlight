@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { applyMiddleware, compose, createStore } from 'redux';
-import thunk from 'redux-thunk';
+import thunkMiddleware from 'redux-thunk';
 import App from './App';
 import { rootReducer } from './redux/rootReducer';
-
-
-const store = createStore(rootReducer, applyMiddleware(thunk))
+//@ts-ignore
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(rootReducer, composeEnhancers(
+  applyMiddleware(thunkMiddleware)
+));
 
 export type AppDispatch = typeof store.dispatch
 

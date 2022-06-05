@@ -2,8 +2,7 @@
 import style from "./header.module.css"
 import React, { FC } from "react"
 import {NavLink } from "react-router-dom"
-import { Modal } from "./modal/modals/modal.jsx";
-import { Product } from "../redux/basketReducer";
+import { ModalContainer } from "./modal/modals/modalContainer";
 
 type HeaderTypes={
     data:number,
@@ -36,7 +35,7 @@ export const Header:FC<HeaderTypes>= ({data,setModal}) => {
                     <label htmlFor="checkbox" className={style.mobile_menu__btn}><div className={style.mobile_menu__icon}></div></label>
                     <div className={style.mobile_menu_text}>Каталог</div>
                     <div className={style.mobile_menu__container}>
-                        <Modal />
+                        <ModalContainer />
                     </div>
                 </nav>
             </div>

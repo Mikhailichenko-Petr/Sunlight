@@ -1,6 +1,6 @@
 // types: 'thunk'
 
-// export const COMMENTS_LOAD ="COMMENTS_LOAD"
+export const IMAGE_DOG ="IMAGE_DOG"
 // export const LOADER ="LOADER"
 // export const LOADER_END ="LOADER_END"
 
