@@ -1,12 +1,10 @@
 import { NavLink } from "react-router-dom"
+import { SignUp } from "./logic/signUp"
 
 export const Registr=()=>{
     return(
             <div>
-                <h1>регистрация</h1>
-                <p>
-                    у вас уже есть аккаунт?<NavLink to="/Login"> Войти</NavLink>
-                </p>
+               
             </div>
         
     )

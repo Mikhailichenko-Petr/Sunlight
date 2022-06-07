@@ -1,4 +1,5 @@
 // Packages
+import { getAuth } from "firebase/auth";
 import {Route,Switch} from "react-router-dom";
 // Styles
 import style from "./app.module.css"

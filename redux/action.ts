@@ -1,7 +1,7 @@
 import { Product } from './basketReducer';
-import {NAV_IMG2, NAV_IMG1, NAV_IMG3, NAV_VIDEO, BASKET_ADD, BASKET_DELITE, DELIVERY_ADD, IMAGE_DOG } from "./types";
+import {NAV_IMG2, NAV_IMG1, NAV_IMG3, NAV_VIDEO, BASKET_ADD, BASKET_DELITE, DELIVERY_ADD, IMAGE_DOG, SET_USER, REMOVE_USER } from "./types";
 
-export type ActionsTypes = Nav1Type|Nav2Type|Nav3Type|NavVideoType|BasketAddType|BasketDelteType|DeliveryAddType
+export type ActionsTypes = Nav1Type|Nav2Type|Nav3Type|NavVideoType|BasketAddType|BasketDelteType|DeliveryAddType|SetUserType|RemoveUserType
 
 ///////////// redux thunk
 
@@ -10,13 +10,40 @@ type ImageDogType={
   type: typeof IMAGE_DOG
   data: string
 }
-export function ImageDogAC(data:any):ImageDogType {
+export function ImageDogAC(data:string):ImageDogType {
     return {
       type: IMAGE_DOG,
       data
     }
 }
 
+////////////// auth
+
+type SetUserType={
+  type: typeof SET_USER
+  user:string
+  token:string
+  isLoaded:boolean
+}
+export function SetUserAC(data:SetUserType):SetUserType {
+    return {
+      type: SET_USER,
+      user:data.user,
+      token:data.token,
+      isLoaded:data.isLoaded
+    }
+}
+
+type RemoveUserType={
+  type: typeof REMOVE_USER
+  data: string
+}
+export function RemoveUser(data:string):RemoveUserType {
+    return {
+      type: REMOVE_USER,
+      data
+    }
+}
 ///////////// nav
 
 type NavVideoType={

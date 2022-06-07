@@ -4,6 +4,11 @@ export const IMAGE_DOG ="IMAGE_DOG"
 // export const LOADER ="LOADER"
 // export const LOADER_END ="LOADER_END"
 
+// types: 'Auth'
+
+export const SET_USER = "SET_USER"
+export const REMOVE_USER = "REMOVE_USER"
+
 // types: 'NAV'
 
 export const NAV_IMG1 ="NAV_IMG1"

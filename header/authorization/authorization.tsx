@@ -1,17 +1,12 @@
 import { Redirect } from "react-router-dom"
 import { Login } from "./login"
+import {useSelector} from 'react-redux';
 
-
-export const Authorization=(req:any,res:any)=>{
+   
+export const Authorization=()=>{
     return(
         <div>
-            <div>
-                <img src="https://g0.sunlight.net/static/shop/images/cart/redpack.jpg" alt="" />
-            </div>
-            <div>
-                <Redirect to="/Login" />
-                <Login />
-            </div>
+            
         </div>
     )
 }
