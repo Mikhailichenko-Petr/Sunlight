@@ -1,10 +1,10 @@
-import { ImagesAPI } from "../API/api";
+import { AkitaAPI, ImagesAPI } from "../API/api";
 import { ImageDogAC } from "./action";
 import { IMAGE_DOG } from "./types";
 
 export const AuthThunkCreator = () => {
     return async (dispatch) => {   
-            const response = await ImagesAPI.ImagesDog()
+            const response = await AkitaAPI.ImagesDog()
             dispatch(ImageDogAC(response.data.message));    
     }
 }
