@@ -206,25 +206,24 @@
     padding-left: 0;
     /* margin-top: -300px; */
   }
-  .mobile_menu__item {
+  .mobile_menu__item{
     font-size: 23px;   
     align-items: center;
     padding-left: 10px;
     padding-top: 7px;
     padding-bottom: 7px;
     width: 90%;
-  }
-  .mobile_menu__item:hover{
-    border-radius: 20px;
-    background-color: #f8f8f8;
-  }
-  .mobile_menu__link {
     text-decoration: none;
-    align-items: center;
     color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: 40px 1fr;
   }
+
+  .mobile_menu__item:hover{
+    border-radius: 20px;
+    background-color: #f8f8f8;
+  }
+
   .mobile_menu_section_one{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

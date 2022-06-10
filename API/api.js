@@ -5,10 +5,7 @@ const instance = axios.create({
 })
 
 
-export const ImagesAPI = {
-    ImagesDog: () => instance.get(`hound/afghan/images`)
-}
-
-export const AkitaAPI = {
-    ImagesDog: () => instance.get(`akita/images`)
+export const getDog = {
+    HoundDog: () => instance.get(`hound/afghan/images`),
+    AkitaDog: () => instance.get(`akita/images`)
 }

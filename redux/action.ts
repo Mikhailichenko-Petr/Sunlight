@@ -5,7 +5,6 @@ export type ActionsTypes = Nav1Type|Nav2Type|Nav3Type|NavVideoType|BasketAddType
 
 ///////////// redux thunk
 
-
 type ImageDogType={
   type: typeof IMAGE_DOG
   data: string

@@ -16,6 +16,7 @@ import { DeliveryContainer } from "./header/Delivery/DeliveryContainer.tsx";
 import { HeaderContainer } from "./header/HeaderContainer.tsx";
 import { Login } from "./header/authorization/login";
 import { Registr } from "./header/authorization/register";
+import { New } from "./header/modals/jewelryTypes/New";
 
 
 
@@ -36,6 +37,8 @@ function App() {
             <Route exact path='/Authorizations' component={Authorization}/>
             <Route exact path='/Login' component={Login}/>
             <Route exact path='/Register' component={Registr}/>
+            //modal//
+            <Route exact path='/New' component={New}/>
           </Switch>
           <Footer />
       </div>

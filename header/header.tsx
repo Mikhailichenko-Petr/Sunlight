@@ -2,7 +2,8 @@
 import style from "./header.module.css"
 import React, { FC } from "react"
 import { Link } from "react-router-dom"
-import { ModalContainer } from "./modal/modals/modalContainer";
+import { ModalContainer } from "./modals/modalContainer"
+
 
 type HeaderTypes={
     data:number,
