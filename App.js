@@ -16,7 +16,9 @@ import { DeliveryContainer } from "./header/Delivery/DeliveryContainer.tsx";
 import { HeaderContainer } from "./header/HeaderContainer.tsx";
 import { Login } from "./header/authorization/login";
 import { Registr } from "./header/authorization/register";
-import { New } from "./header/modals/jewelryTypes/New";
+import { NewContainer } from "./header/modals/jewelryTypes/NewContainer";
+import { Neckleace } from "./header/modals/jewelryTypes/Neckleace";
+import { Gold } from "./header/modals/jewelryTypes/Gold";
 
 
 
@@ -38,7 +40,9 @@ function App() {
             <Route exact path='/Login' component={Login}/>
             <Route exact path='/Register' component={Registr}/>
             //modal//
-            <Route exact path='/New' component={New}/>
+            <Route exact path='/New' component={NewContainer}/>
+            <Route exact path='/Neckleace' component={Neckleace}/>
+            <Route exact path='/Gold' component={Gold}/>
           </Switch>
           <Footer />
       </div>

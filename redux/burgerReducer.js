@@ -8,9 +8,9 @@ export const getAkitaThunkCreator = () => {
             dispatch(ImageDogAC(response.data.message));    
     }
 }
-export const getHoundThunkCreator = () => {
+export const getHoundThunkCreator = (pageSize) => {
     return async (dispatch) => {   
-            const response = await getDog.HoundDog()
+            const response = await getDog.HoundDog(pageSize)
             console.log(response);
             dispatch(ImageDogAC(response.data.message));    
     }
@@ -18,7 +18,10 @@ export const getHoundThunkCreator = () => {
 
 
 const initialState ={
-    Images: false
+    Images:[],
+    pageSize:10,
+    dogCount:20,
+    currentPage:2
 }
 
 export const BurgerReducer=(state = initialState,action)=>{
