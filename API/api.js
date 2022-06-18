@@ -2,11 +2,15 @@ import * as axios from "axios";
 
 
 const instance = axios.create({
-    baseURL: 'https://dog.ceo/api/breed/',
+    withCredentials: true,
+    headers: { "API-KEY": "6c5a7645-0acc-44ea-8264-8cc0a771effb" },
+    baseURL: 'https://social-network.samuraijs.com/api/1.0/',
 })
 
 
-export const getDog = {
-    HoundDog: (pageSize) => {return instance.get(`hound/images/random/${pageSize}`)},
-    AkitaDog: () => instance.get(`akita/images`)
+export const usersAPI = {
+  getUsers: (currentPage, pageSize) => {
+    return instance.get(`users?page=${currentPage}&count=${pageSize}`
+      ).then(response => response.data)
+}
 }

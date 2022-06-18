@@ -1,17 +1,27 @@
 import { Product } from './basketReducer';
-import {NAV_IMG2, NAV_IMG1, NAV_IMG3, NAV_VIDEO, BASKET_ADD, BASKET_DELITE, DELIVERY_ADD, IMAGE_DOG, SET_USER, REMOVE_USER } from "./types";
+import {NAV_IMG2, NAV_IMG1, NAV_IMG3, NAV_VIDEO, BASKET_ADD, BASKET_DELITE, DELIVERY_ADD, SET_USER, REMOVE_USER, GET_USERS, SET_PAGE } from "./types";
 
-export type ActionsTypes = Nav1Type|Nav2Type|Nav3Type|NavVideoType|BasketAddType|BasketDelteType|DeliveryAddType|SetUserType|RemoveUserType
+export type ActionsTypes = Nav1Type|Nav2Type|Nav3Type|NavVideoType|BasketAddType|BasketDelteType|DeliveryAddType|SetUserType|RemoveUserType|GetUsersType|SetPageType
 
 ///////////// redux thunk
-
-type ImageDogType={
-  type: typeof IMAGE_DOG
+type GetUsersType={
+  type: typeof GET_USERS
   data: string
 }
-export function ImageDogAC(data:string):ImageDogType {
+export function GetUsersAC(data:string):GetUsersType {
     return {
-      type: IMAGE_DOG,
+      type: GET_USERS,
+      data
+    }
+}
+
+type SetPageType={
+  type: typeof SET_PAGE
+  data: string
+}
+export function SetPageAC(data:string):SetPageType {
+    return {
+      type: SET_PAGE,
       data
     }
 }

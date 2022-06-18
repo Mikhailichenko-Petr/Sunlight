@@ -1,9 +1,11 @@
+import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
+import { SetPageAC } from "../../../redux/action"
 import { New } from "./New"
 type dataType={
-    Images:Array<string>
+    Users:Array<string>
     pageSize:number
-    dogCount:number
+    totalUsersCount:number
     currentPage:number
 }
 type burgerType={
@@ -11,12 +13,16 @@ type burgerType={
 }
 
 export const NewContainer=()=>{
-    const State=useSelector((res:burgerType)=>res.BurgerReducer.Images)
+    const dispatch=useDispatch()
+    const State=useSelector((res:burgerType)=>res.BurgerReducer.Users)
     const PageSize=useSelector((res:burgerType)=>res.BurgerReducer.pageSize)
-    const TotalImagesCount=useSelector((res:burgerType)=>res.BurgerReducer.dogCount)
+    const totalUsersCount=useSelector((res:burgerType)=>res.BurgerReducer.totalUsersCount)
     const CurrentPage=useSelector((res:burgerType)=>res.BurgerReducer.currentPage)
+    const page=(p:any)=>{
+        dispatch(SetPageAC(p))
+    }
     
     return(
-        <New  State={State} PageSize={PageSize} TotalImagesCount={TotalImagesCount} CurrentPage={CurrentPage} />
+        <New  State={State} PageSize={PageSize} totalUsersCount={totalUsersCount} CurrentPage={CurrentPage} Page={page} />
     )
 }

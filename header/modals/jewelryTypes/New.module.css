@@ -7,12 +7,13 @@
     width: 300px;
     height: 300px;
 }
-.icon img{
+.icon{
     width: 300px;
     height: 300px;
     border-radius: 20px;
+    background-color: aqua;
 }
-.icon img:hover{
+.icon:hover{
     width: 310px;
     height: 310px;
     cursor: pointer;
@@ -21,6 +22,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.page{
+    cursor: pointer;
+ 
+}
 .number{
     font-weight: bold;
+    cursor: pointer;
 }

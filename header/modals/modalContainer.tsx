@@ -1,12 +1,12 @@
 import { useDispatch } from "react-redux"
-import { getHoundThunkCreator } from "../../redux/burgerReducer"
+import { getUsersThunkCreator } from "../../redux/burgerReducer"
 
 import { Modal } from "./modal"
 
 export const ModalContainer=()=>{
     const dispatch:any=useDispatch()
     const decorations = ():any =>{
-        dispatch(getHoundThunkCreator())
+        dispatch(getUsersThunkCreator())
     }
     return(
         <Modal decorations={decorations}/>

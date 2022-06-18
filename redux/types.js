@@ -1,6 +1,7 @@
 // types: 'thunk'
 
-export const IMAGE_DOG ="IMAGE_DOG"
+export const GET_USERS ="GET_USERS"
+export const SET_PAGE="SET_PAGE"
 // export const LOADER ="LOADER"
 // export const LOADER_END ="LOADER_END"
 

@@ -1,40 +1,41 @@
-import { getDog } from "../API/api";
-import { ImageDogAC } from "./action";
-import { IMAGE_DOG } from "./types";
 
-export const getAkitaThunkCreator = () => {
-    return async (dispatch) => {   
-            const response = await getDog.AkitaDog()
-            dispatch(ImageDogAC(response.data.message));    
-    }
-}
-export const getHoundThunkCreator = (pageSize) => {
-    return async (dispatch) => {   
-            const response = await getDog.HoundDog(pageSize)
-            console.log(response);
-            dispatch(ImageDogAC(response.data.message));    
+import { usersAPI } from "../API/api";
+import { GetUsersAC } from "./action";
+import { GET_USERS, SET_PAGE } from "./types";
+
+
+export const getUsersThunkCreator = (currentPage, pageSize) => {
+
+    return async (dispatch) => {
+            const response = await  usersAPI.getUsers(currentPage, pageSize);
+            dispatch(GetUsersAC(response.items));
     }
 }
 
 
 const initialState ={
-    Images:[],
-    pageSize:10,
-    dogCount:20,
-    currentPage:2
+    Users:[],
+    pageSize:5,
+    totalUsersCount: 21,
+    currentPage:1
 }
 
 export const BurgerReducer=(state = initialState,action)=>{
     console.log(action.data,'burger');
     console.log(state,'stateBurger');
     switch(action.type){
-        case IMAGE_DOG:
+        case GET_USERS:
             return{
-                Images: action.data
+                Users: action.data
 
             }  
-        
+        case SET_PAGE:{
+            return{
+                ...state,currentPage: action.data
+            }
+        } 
         default:
             return state
     }
 }
+
