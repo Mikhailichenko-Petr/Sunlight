@@ -1,22 +1,11 @@
 
-import { usersAPI } from "../API/api";
-import { GetUsersAC } from "./action";
 import { GET_USERS, SET_PAGE } from "./types";
-
-
-export const getUsersThunkCreator = (currentPage, pageSize) => {
-
-    return async (dispatch) => {
-            const response = await  usersAPI.getUsers(currentPage, pageSize);
-            dispatch(GetUsersAC(response.items));
-    }
-}
 
 
 const initialState ={
     Users:[],
-    pageSize:5,
-    totalUsersCount: 21,
+    pageSize:9,
+    totalUsersCount: 90,
     currentPage:1
 }
 
@@ -26,12 +15,13 @@ export const BurgerReducer=(state = initialState,action)=>{
     switch(action.type){
         case GET_USERS:
             return{
-                Users: action.data
-
+                ...state,
+                Users:[...action.data]
             }  
         case SET_PAGE:{
             return{
-                ...state,currentPage: action.data
+                ...state,
+                currentPage: action.data
             }
         } 
         default:

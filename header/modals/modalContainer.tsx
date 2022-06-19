@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux"
-import { getUsersThunkCreator } from "../../redux/burgerReducer"
+import { getUsersThunkCreator } from "../../redux/burgerThunk"
+
 
 import { Modal } from "./modal"
 
