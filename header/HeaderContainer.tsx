@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Order_status } from "../Order_status/Order_status";
 //@ts-ignore
 import { Header } from "./header.tsx";
-import { BasketReducerType} from "../redux/basketReducer";
+import { BasketReducerType} from "../redux/basket/basketReducer";
 
 
 

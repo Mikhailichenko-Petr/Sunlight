@@ -1,10 +1,10 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { BasketaAddAC } from "../redux/action"
 import { Main } from "./main"
 import uniqid from "uniqid"
 
-import { NavReducerType } from "../redux/navReducer"
+import { NavReducerType } from "../redux/nav/navReducer"
+import { BasketaAddAC } from "../redux/basket/backetAction"
 
 type MainContainerType={
     NavReducer:NavReducerType

@@ -4,17 +4,12 @@
 }
 .icon{
     display: grid;
-    border-bottom: 20px;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    width: 300px;
-    height: 300px;
-    background-color: darkgrey;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
 }
-
-.icon:hover{
-    width: 310px;
-    height: 310px;
-    cursor: pointer;
+.icon img{
+    width: 250px;
 }

@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
-import { Product } from "../../redux/basketReducer"
-import { BasketDeliteAC } from "../../redux/action"
+import { BasketDeliteAC } from "../../redux/basket/backetAction"
+import { Product } from "../../redux/basket/basketReducer"
+
 import { Basket } from "./basket"
 
 export const BasketContainer =()=>{

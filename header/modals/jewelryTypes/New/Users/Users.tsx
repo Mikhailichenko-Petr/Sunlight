@@ -1,12 +1,11 @@
 import { FC } from "react"
 import { UserType } from "../../../../../redux/type"
+import img from "./img.png"
 import style from "./Users.module.css"
-type MapType={
-    map:(res:any)=>any
-}
+
 
 type UsersType={
-    State:MapType
+    State:UserType
 }
 
 export const Users:FC<UsersType>=({State})=>{
@@ -16,7 +15,10 @@ export const Users:FC<UsersType>=({State})=>{
                     {
                             State.map((res:UserType)=>{
                                 return(
-                                    <div className={style.icon}>{res.name}</div>
+                                    <div className={style.icon}>
+                                        <div>{res.name}</div>
+                                        <img src={res.photos.small?res.photos.small:img} alt="icon_user" />
+                                    </div>  
                                 )
                             })
                     }

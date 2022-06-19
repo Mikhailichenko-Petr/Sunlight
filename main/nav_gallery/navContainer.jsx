@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
-import { Nav2AC, Nav1AC, Nav3AC, NavVideo } from "../../redux/action.ts"
+import { Nav1AC, Nav2AC, Nav3AC, NavVideo } from "../../redux/nav/navAction"
+
 import { Nav } from "./nav_gallery"
 
 

@@ -1,17 +1,25 @@
+import { FC } from "react"
 import style from "./New.module.css"
 import { Users } from "./Users/Users"
-
-export const New=({State,PageSize,totalUsersCount,CurrentPage,onPageChanget})=>{
+import { UserType } from "../../../../redux/type"
+type NewType={
+    State:UserType
+    PageSize:number,
+    totalUsersCount:number,
+    CurrentPage:number,
+    onPageChanget:(arg:number)=>void
+}
+export const New:FC<NewType>=({State,PageSize,totalUsersCount,CurrentPage,onPageChanget})=>{
     const pageCount= Math.ceil(totalUsersCount/PageSize)
     const pages = []
     for(let i=1;i<=pageCount;i++){
         pages.push(i)
     }
-    console.log(pageCount);
     return(
         <div>
              <div className={style.page}>
                     {pages.map(p=>(
+                        //@ts-ignore
                             <span key={p} className={CurrentPage===p&&style.number}
                             onClick={()=>{onPageChanget(p)}}>{p}</span>
                     ))}

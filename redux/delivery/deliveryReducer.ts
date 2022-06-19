@@ -1,6 +1,5 @@
-import { ActionsTypes } from './action';
-
-import { DELIVERY_ADD } from "./types";
+import { ActionsTypes } from "../type";
+import { DELIVERY_ADD } from "../types";
 
 
 export type DeliveryReducerType={

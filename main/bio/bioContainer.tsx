@@ -1,7 +1,8 @@
 import React from "react"
 import { useDispatch } from "react-redux"
-import { BasketaAddAC } from "../../redux/action"
+
 import uniqid from "uniqid"
+import { BasketaAddAC } from "../../redux/basket/backetAction"
 import { Bio } from "./bio"
 
 export const BioContainer = () => {

@@ -1,8 +1,9 @@
 import React from "react"
 import { FC } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { DeliveryAddAC } from "../../redux/action"
-import { DeliveryReducerType } from "../../redux/deliveryReducer"
+import { DeliveryAddAC } from "../../redux/delivery/deliveryAction"
+
+import { DeliveryReducerType } from "../../redux/delivery/deliveryReducer"
 import { Delivery } from "./Delivery"
 
 

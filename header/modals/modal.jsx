@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import style from "./modal.module.css"
-export const Modal = ({decorations}) => {
+export const Modal = () => {
     return(
         <div className={style.mobile_menu__list}>
                        <ul>

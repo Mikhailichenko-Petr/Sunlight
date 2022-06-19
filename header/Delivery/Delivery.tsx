@@ -1,5 +1,5 @@
 import React, {FC} from "react"
-import { DeliveryReducerType } from "../../redux/deliveryReducer"
+import { DeliveryReducerType } from "../../redux/delivery/deliveryReducer"
 
 import style from "./Delivery.module.css"
 

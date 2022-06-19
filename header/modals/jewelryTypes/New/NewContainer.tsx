@@ -1,12 +1,12 @@
 import { FC, useEffect } from "react"
-import { connect, useDispatch } from "react-redux"
-import { useSelector } from "react-redux"
-import { SetPageAC } from "../../../../redux/action"
-import { getUsersThunkCreator } from "../../../../redux/burgerThunk"
+import { connect } from "react-redux"
+
+import { getUsersThunkCreator } from "../../../../redux/burger/burgerThunk"
+import { UserType } from "../../../../redux/type"
 import { New } from "./New"
 
 type NewContainerType={
-    State:()=>void
+    State:UserType
     PageSize:number
     totalUsersCount:number
     CurrentPage:number

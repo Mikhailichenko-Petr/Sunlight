@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { Product } from "../../redux/basketReducer"
+import { Product } from "../../redux/basket/basketReducer"
 //@ts-ignore
 import style from "./basket.module.css"
 

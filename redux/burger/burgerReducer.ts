@@ -1,17 +1,21 @@
+import { ActionsTypes } from "../type";
+import { GET_USERS, SET_PAGE } from "../types";
 
-import { GET_USERS, SET_PAGE } from "./types";
+type BurgerReducerTypes={
+    Users:Array<string>,
+    pageSize:number,
+    totalUsersCount:number,
+    currentPage:number
+}
 
-
-const initialState ={
+const initialState:BurgerReducerTypes ={
     Users:[],
     pageSize:9,
     totalUsersCount: 90,
     currentPage:1
 }
 
-export const BurgerReducer=(state = initialState,action)=>{
-    console.log(action.data,'burger');
-    console.log(state,'stateBurger');
+export const BurgerReducer=(state = initialState,action:ActionsTypes):BurgerReducerTypes=>{
     switch(action.type){
         case GET_USERS:
             return{

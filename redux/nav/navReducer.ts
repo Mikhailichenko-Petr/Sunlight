@@ -1,5 +1,6 @@
-import { ActionsTypes } from './action';
-import { NAV_IMG1, NAV_IMG2, NAV_IMG3, NAV_VIDEO } from "./types";
+
+import { ActionsTypes } from "../type";
+import { NAV_IMG1, NAV_IMG2, NAV_IMG3, NAV_VIDEO } from "../types";
 
 export interface NavReducerType {
     Image?:string

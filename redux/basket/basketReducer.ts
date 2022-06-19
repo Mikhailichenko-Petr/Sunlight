@@ -1,5 +1,5 @@
-import { ActionsTypes } from './action';
-import { BASKET_ADD, BASKET_DELITE } from "./types";
+import { ActionsTypes } from "../type";
+import { BASKET_ADD, BASKET_DELITE } from "../types";
 
 export type Product={
     id:string
