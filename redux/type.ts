@@ -1,12 +1,11 @@
 
-
 import { BasketAddType, BasketDelteType } from "./basket/backetAction"
-import { GetUsersType, SetPageType } from "./burger/BurgerAction"
+import { GetUsersType, SetPageType, toggleFetchingTypes } from "./burger/BurgerAction"
 import { DeliveryAddType } from "./delivery/deliveryAction"
 import { Nav1Type, Nav2Type, Nav3Type, NavVideoType } from "./nav/navAction"
 import { rootReducer } from "./rootReducer"
 
-export type ActionsTypes = Nav1Type|Nav2Type|Nav3Type|NavVideoType|BasketAddType|BasketDelteType|DeliveryAddType|GetUsersType|SetPageType
+export type ActionsTypes = Nav1Type|Nav2Type|Nav3Type|NavVideoType|BasketAddType|BasketDelteType|DeliveryAddType|GetUsersType|SetPageType|toggleFetchingTypes
 
 export type UserType={
     followed:boolean,
@@ -16,6 +15,7 @@ export type UserType={
     status:string|string
     uniqueUrlName:string|null
     map?:any
+    isFetching?:Boolean
 }
 
 type RootReducerType = typeof rootReducer

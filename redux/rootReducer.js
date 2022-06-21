@@ -10,6 +10,5 @@ export const rootReducer= combineReducers({
     BasketReducer,
     DeliveryReducer,
     BurgerReducer
-
 })
 

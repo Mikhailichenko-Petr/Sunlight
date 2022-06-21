@@ -1,4 +1,5 @@
-import { NAV_IMG1, NAV_IMG2, NAV_IMG3, NAV_VIDEO } from "../types"
+import { NAV_IMG1, NAV_IMG2, NAV_IMG3, NAV_VIDEO } from "./navTypes"
+
 
 export type NavVideoType={
     type: typeof NAV_VIDEO

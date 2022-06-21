@@ -1,4 +1,5 @@
-import { GET_USERS, SET_PAGE } from "../types"
+import { GET_USERS, SET_PAGE, TOGGLE_FETCHING } from "./burgerType"
+
 
 export type GetUsersType={
     type: typeof GET_USERS
@@ -21,3 +22,11 @@ export type GetUsersType={
         data
       }
   }
+  export type toggleFetchingTypes={
+    type:typeof TOGGLE_FETCHING,
+    isFetching:boolean
+  }
+  export let toggleFetching = (fetching:boolean) => ({
+    type:TOGGLE_FETCHING,
+    isFetching: fetching
+})

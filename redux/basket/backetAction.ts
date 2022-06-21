@@ -1,5 +1,6 @@
-import { BASKET_ADD, BASKET_DELITE } from "../types"
+
 import { Product } from "./basketReducer"
+import { BASKET_ADD, BASKET_DELITE } from "./basketTypes"
 
 export type BasketAddType={
     type: typeof BASKET_ADD

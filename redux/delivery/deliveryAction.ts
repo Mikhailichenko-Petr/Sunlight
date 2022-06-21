@@ -1,4 +1,5 @@
-import { DELIVERY_ADD } from "../types"
+import { DELIVERY_ADD } from "./deliveryTypes"
+
 
 export type DeliveryAddType={
     type: typeof DELIVERY_ADD

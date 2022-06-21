@@ -17,6 +17,7 @@ export const New:FC<NewType>=({State,PageSize,totalUsersCount,CurrentPage,onPage
     }
     return(
         <div>
+            
              <div className={style.page}>
                     {pages.map(p=>(
                         //@ts-ignore
