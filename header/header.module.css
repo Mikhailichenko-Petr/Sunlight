@@ -57,6 +57,7 @@
     border: none;
     outline: none;
     opacity: 0;
+    cursor: pointer;
   }
   .inpt{
     border: none;

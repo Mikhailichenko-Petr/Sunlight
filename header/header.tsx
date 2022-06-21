@@ -1,6 +1,6 @@
 // @ts-ignore
 import style from "./header.module.css"
-import React, { FC } from "react"
+import React, { FC, useState } from "react"
 import { Link } from "react-router-dom"
 import { ModalContainer } from "./modals/modalContainer"
 
@@ -11,6 +11,17 @@ type HeaderTypes={
 }
 
 export const Header:FC<HeaderTypes>= ({data,setModal}) => {
+    const [value,setValue]=useState("")
+    const handleSubmit=(e:any)=>{
+        e.preventDefault()
+        setValue("")
+    }
+    const handleChange=(e:any)=>{
+        setValue(e.currentTarget.value)
+    }
+    const deleteValue=()=>{
+        setValue("")
+    }
     return(
         <header className={style.header} >
         <div className={style.header_block1}>
@@ -39,10 +50,10 @@ export const Header:FC<HeaderTypes>= ({data,setModal}) => {
                     </div>
                 </nav>
             </div>
-              <form className={style.header_input}>
+              <form className={style.header_input} onSubmit={handleSubmit}>
                   <img src='https://svgsilh.com/svg_v2/306102.svg' alt="input" height="25px" />
-                  <input type="text" placeholder="Поиск в SUNLIGHT" className={style.inpt}/>
-                  <div className={style.delite}>X</div>
+                  <input type="text" placeholder="Поиск в SUNLIGHT" value={value} className={style.inpt} onChange={handleChange}/>
+                  <div className={style.delite} onClick={deleteValue}>X</div>
                   <input className={style.input_btn} type="submit" value="Найти"></input>
               </form>
             <nav className={style.sidebar_menu}>
