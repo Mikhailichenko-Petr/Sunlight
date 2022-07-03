@@ -1,0 +1,33 @@
+.form{
+	display: grid;
+	grid-template-columns: 1fr;
+	max-width: 280px;
+	text-align: center;
+}
+.errors{
+	font-size: 20px;
+	color: rgb(189, 1, 1);
+	
+	width: 280px;
+}
+.email input{
+	height: 20px;
+	width: 245px;
+	font-size: 20px;
+	padding: 20px 15px;
+	border-radius: 10px;
+}
+.password input{
+	height: 20px;
+	width: 245px;
+	font-size: 20px;
+	padding: 20px 15px;
+	border-radius: 10px;
+}
+.submit{
+	height: 60px;
+	width: 100%;
+	font-size: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
